@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Yu Mincho';
+    src: url('../fonts/YuMincho-Demibold.eot');
+    src: url('../fonts/YuMincho-Demibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YuMincho-Demibold.woff2') format('woff2'),
+        url('../fonts/YuMincho-Demibold.woff') format('woff'),
+        url('../fonts/YuMincho-Demibold.ttf') format('truetype'),
+        url('../fonts/YuMincho-Demibold.svg#YuMincho-Demibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

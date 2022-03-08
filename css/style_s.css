@@ -1,0 +1,250 @@
+/* REGULAR BANNER : START */
+.regular-banner{
+    position: relative;
+    width: 100%;
+}
+.regular-banner-img{
+    width: 100%;
+}
+/* REGULAR BANNER : END */
+
+/* REGULAR HEADING : START */
+.regular-head{
+    width: 100%;
+    text-align: center;
+}
+.regular-head.margin-top-minus{
+    transform: translate(0, -30px);
+    padding-bottom: 80px;
+}
+.regular-head-wrapper{
+    position: relative;
+    display: inline-block;
+}
+.regular-head-wrapper:before,
+.regular-head-wrapper:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 200px;
+    min-width: 200px;
+    height: 5px;
+}
+.regular-head-wrapper:before{
+    right: 100%;
+    margin-right: 30px;
+    background: linear-gradient(270deg, #d9b341, #070069);
+}
+.regular-head-wrapper:after{
+    left: 100%;
+    margin-left: 30px;
+    background: linear-gradient(90deg, #d9b341, #070069);
+}
+.regular-head h2{
+    color: #070069;
+    font-size: 48px;
+    line-height: 1;
+}
+/* REGULAR HEADING : END */
+
+
+/* PURCHASE|SALE LAYER : START */
+
+/* ==> TOPBAR */
+.purchase-sale-topbar-bttns{
+    margin-bottom: 130px;
+}
+.purchase-sale-topbar-bttns .col-inner{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.purchase-sale-topbar-bttns .bttn{
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    font-size: 15px;
+    padding: 26px 8px;
+    background: #d9b341;
+    color: #070069;
+}
+.purchase-sale-topbar-bttns .bttn.bttn-yellow{
+    background: #d9b341;
+    color: #070069;
+}
+.purchase-sale-topbar-bttns .bttn.bttn-yellow:hover{
+    background: #070069;
+    color: #d9b341;
+}
+.purchase-sale-topbar-bttns .bttn.bttn-blue{
+    background: #070069;
+    color: #d9b341;
+}
+.purchase-sale-topbar-bttns .bttn.bttn-blue:hover{
+    background: #d9b341;
+    color: #070069;
+}
+.purchase-sale-topbar-bttns .bttn span{
+    font-size: 30px;
+}
+
+/* ==> REALSTATE */
+.purchase-sale-realstate{
+    width: 100%;
+}
+.purchase-sale-realstate .col-inner{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #d9b341;
+    background: #fff7e1;
+    padding: 6px;
+    margin-bottom: 150px;
+}
+.purchase-sale-realstate #SaleRealEstate .col-inner{
+    border-color: #070069;
+    background: #eff7ff;
+}
+.purchase-sale-realstate .purchase-sale-box{
+    width: 100%;
+    position: relative;
+}
+.purchase-sale-realstate .purchase-sale-box:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #070069;
+    user-select: none;
+    pointer-events: none;
+}
+.purchase-sale-realstate #SaleRealEstate .purchase-sale-box:after{
+    border-color: #d9b341;
+}
+.purchase-sale-realstate .head{
+    width: 100%;
+    position: relative;
+    padding: 15px 0 15px 120px;
+}
+.purchase-sale-realstate .head:before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    height: calc(100% + 10px);
+    background: #d9b341;
+}
+.purchase-sale-realstate #SaleRealEstate .head:before{
+    background: #070069;
+}
+.purchase-sale-realstate .head:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -13px;
+    width: 100px;
+    height: 10px;
+    margin: auto;
+    background: #070069;
+}
+.purchase-sale-realstate #SaleRealEstate .head:after{
+    background: #d9b341;
+}
+.purchase-sale-realstate .head h3{
+    position: relative;
+    z-index: 1;
+    color: #070069;
+    font-size: 35px;
+}
+.purchase-sale-realstate #SaleRealEstate .head h3{
+    color: #d9b341;
+}
+.purchase-sale-realstate .other-cont{
+    width: 100%;
+    padding: 36px 46px;
+}
+.purchase-sale-realstate .para{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.purchase-sale-realstate .para p{
+    color: #000;
+    font-size: 20px;
+}
+.purchase-sale-realstate .custom_tabs_nav ul{
+    display: flex;
+}
+.purchase-sale-realstate .custom_tabs_nav li{
+    flex: 1 0 0;
+}
+.purchase-sale-realstate .custom_tabs_nav a{
+    display: block;
+    border: 3px solid #765800;
+    border-radius: 10px 10px 0 0;
+    color: #070069;
+    font-size: 25px;
+    line-height: 1;
+    background: #d9b341;
+    text-transform: uppercase;
+    padding: 7px;
+    text-align: center;
+}
+.purchase-sale-realstate #SaleRealEstate .custom_tabs_nav a{
+    color: #d9b341;
+    border-color: #626262;
+    background: #070069;
+}
+.purchase-sale-realstate .custom_tabs_nav a.tab_nav_active{
+    background: #FFF;
+    border-bottom-color: #FFF;
+}
+.purchase-sale-realstate #SaleRealEstate .custom_tabs_nav a.tab_nav_active{
+    background: #FFF;
+    border-bottom-color: #FFF;
+}
+.purchase-sale-realstate .custom_tabs_content{
+    border: 3px solid #765800;
+    border-top: none;
+    background: #FFF;
+    border-radius: 0 0 10px 10px;
+    padding: 50px 30px 30px;
+}
+.purchase-sale-realstate #SaleRealEstate .custom_tabs_content{
+    border-color: #626262;
+}
+.purchase-sale-realstate .custom_tabs_content .flex-bx{
+    display: flex;
+    flex-wrap: wrap;
+}
+.purchase-sale-realstate .custom_tabs_content .img-bx{
+    width: 40%;
+    background: #d9b341;
+}
+.purchase-sale-realstate #SaleRealEstate .custom_tabs_content .img-bx{
+    background: #070069;
+}
+.purchase-sale-realstate .custom_tabs_content .cont-bx{
+    width: 60%;
+    padding: 30px 0 30px 30px;
+}
+.purchase-sale-realstate .custom_tabs_content .cont-bx h4{
+    color: #070069;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.purchase-sale-realstate .custom_tabs_content .cont-bx p{
+    color: #000001;
+    font-size: 16px;
+}
+/* PURCHASE|SALE LAYER : END */
