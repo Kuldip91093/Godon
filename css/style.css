@@ -296,16 +296,25 @@ img{
 /*animations css end*/
 
 
-/* MAIN */
+
+/* MAIN : START */
 .main{
     width: 100%;
     overflow-x: hidden;
+    padding-top: 100px;
 }
+/* MAIN : END */
 
 /*header css start*/
 .site_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     background-color: #d9b341;
     padding: 14px 0;
+    z-index: 9999;
 }
 .site_header .custom_container {
     display: -ms-flexbox;
@@ -318,6 +327,10 @@ img{
     max-width: 1200px;
     padding: 0 15px;
     margin: auto;
+}
+.site_header .header_logo{
+    position: relative;
+    z-index: 1;
 }
 .site_header .custom_navbar ul {
     display: -ms-flexbox;
@@ -465,6 +478,13 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 
 /*responsive css start*/
 @media(max-width: 1166px) {
+    /* MAIN */
+    .main{
+        padding-top: 84px;
+    }
+    /* MAIN */
+
+    /* HEADER|FOOTER : START */
     .site_footer .custom_container,
     .site_header .custom_container {
         max-width: 900px;
@@ -480,8 +500,10 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
         font-size: 18px;
         line-height: 30px;
     }
+    /* HEADER|FOOTER : END */
 }
 @media(max-width: 900px) {
+    /* HEADER|FOOTER : START */
     .site_footer .custom_row {
         flex-direction: column;
     }
@@ -496,9 +518,9 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     nav.custom_navbar {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: -280px;
         bottom: 0;
-        width: 100vw;
+        width: 280px;
         background-color: #d9b341;
         display: -ms-flexbox;
         display: flex;
@@ -532,8 +554,15 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     .site_footer .footer_text img {
         margin: 0 auto 10px;
     }
+    /* HEADER|FOOTER : END */
 }
 @media (max-width: 675px){
+    /* MAIN :START */
+    .main{
+        padding-top: 60px;
+    }
+    /* MAIN :END */
+    /* HEADER|FOOTER : START */
     .site_header {
         padding: 10px 0;
     }
@@ -543,5 +572,6 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     .footer_conpyright p {
         padding: 15px;
     }
+    /* HEADER|FOOTER : END */
 }
 /*responsive css end*/
