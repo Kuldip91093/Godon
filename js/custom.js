@@ -87,14 +87,12 @@ $(document).ready(function(){
 	$('#re_purchase').responsiveTabs({
 		startCollapsed: 'accordion',
 		active: 1,
-		collapsible: true,
 		animation: 'slide'
 	});
 
 	$('#re_sale').responsiveTabs({
 		startCollapsed: 'accordion',
 		active: 1,
-		collapsible: true,
 		animation: 'slide'
 	});
 

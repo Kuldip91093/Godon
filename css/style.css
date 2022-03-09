@@ -476,13 +476,14 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 }
 /*footer css end*/
 
+/******************************************** RESPONSIVE ********************************************/
 /*responsive css start*/
 @media(max-width: 1166px) {
-    /* MAIN */
+    /* MAIN : START */
     .main{
         padding-top: 84px;
     }
-    /* MAIN */
+    /* MAIN : END */
 
     /* HEADER|FOOTER : START */
     .site_footer .custom_container,
