@@ -79,7 +79,7 @@
 }
 /* REGULAR HEADING--2 : END */
 
-/* PURCHASE|SALE LAYER : START */
+/* PURCHASE|SALE(HOWTO PAGE) : START */
 
 /* ==> TOPBAR */
 .purchase-sale-topbar-bttns{
@@ -290,6 +290,12 @@
     width: 100%;
     padding: 30px 0;
 }
+
+/* => How To Contact */
+.howto-contact-section{
+    width: 100%;
+    padding-bottom: 80px;
+}
 .howto-contact-content .content-bx{
     width: 100%;
     max-width: 450px;
@@ -330,21 +336,21 @@
     font-size: 20px;
     line-height: 1;
 }
-/* PURCHASE|SALE LAYER : END */
+/* PURCHASE|SALE(HOWTO PAGE) : END */
 
 
 /******************************************** RESPONSIVE ********************************************/
 @media(max-width: 1166px) {
-    /* REGULAR HEADING : START */
+    /* REGULAR HEADING--2 : START */
     .regular-head2 .regular-head2-wrapper:before{
         height: 15px;
     }
     .regular-head2 h2{
         font-size: 24px;
     }
-    /* REGULAR HEADING : END */
+    /* REGULAR HEADING--2 : END */
 
-    /* PURCHASE|SALES : START */
+    /* PURCHASE|SALES(HOWTO PAGE) : START */
     .howto-contact-content .head{
         justify-content: center;
     }
@@ -354,7 +360,7 @@
     .howto-contact-content .content-mail{
         max-width: 260px;
     }
-    /* PURCHASE|SALES : END */
+    /* PURCHASE|SALES(HOWTO PAGE) : END */
 }
 @media(max-width: 900px) {
     /* REGULAR HEADING : START */
@@ -371,6 +377,9 @@
     .regular-head-wrapper:after{
         margin-left: 15px;
     }
+    /* REGULAR HEADING : END */
+
+    /* REGULAR HEADING--2 : START */
     .regular-head h2{
         font-size: 24px;
     }
@@ -380,9 +389,9 @@
     .regular-head2 h2{
         font-size: 20px;
     }
-    /* REGULAR HEADING : END */
+    /* REGULAR HEADING--2 : END */
 
-    /* PURCHASE|SALES : START */
+    /* PURCHASE|SALES(HOWTO PAGE) : START */
     .purchase-sale-realstate .col-inner{
         border-width: 1px;
         margin-bottom: 80px;
@@ -450,7 +459,7 @@
     .howto-contact-content .content-mail p{
         font-size: 16px;
     }
-    /* PURCHASE|SALES : END */
+    /* PURCHASE|SALES(HOWTO PAGE) : END */
 }
 
 @media(max-width: 675px) {
@@ -473,7 +482,7 @@
     }
     /* REGULAR HEADING : END */
 
-    /* PURCHASE|SALES : START */
+    /* PURCHASE|SALES(HOWTO PAGE) : START */
     .purchase-sale-topbar-bttns{
         margin-bottom: 50px;
     }
@@ -533,5 +542,5 @@
     .howto-contact-content .head h4{
         font-size: 18px;
     }
-    /* PURCHASE|SALES : END */
+    /* PURCHASE|SALES(HOWTO PAGE) : END */
 }
