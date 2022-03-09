@@ -215,7 +215,6 @@
 .purchase-sale-realstate .custom_tabs_nav li{
     flex: 1 0 0;
 }
-.purchase-sale-realstate .custom_tabs_nav a,
 .purchase-sale-realstate a.r-tabs-anchor{
     display: block;
     border: 3px solid #765800;
@@ -234,19 +233,16 @@
 .purchase-sale-realstate .r-tabs-accordion-title a.r-tabs-anchor{
     border-radius: 10px;
 }
-.purchase-sale-realstate #SaleRealEstate .custom_tabs_nav a,
 .purchase-sale-realstate #SaleRealEstate a.r-tabs-anchor{
     color: #d9b341;
     border-color: #626262;
     background: #070069;
 }
-.purchase-sale-realstate .custom_tabs_nav .r-tabs-state-active a,
-.purchase-sale-realstate .r-tabs-state-active a.r-tabs-anchor{
+.purchase-sale-realstate .r-tabs-state-active a.r-tabs-anchor {
     background: #FFF;
     border-bottom-color: #FFF;
     border-radius: 10px 10px 0 0;
 }
-.purchase-sale-realstate #SaleRealEstate .custom_tabs_nav .r-tabs-state-active a,
 .purchase-sale-realstate #SaleRealEstate .r-tabs-state-active a.r-tabs-anchor{
     background: #FFF;
     border-bottom-color: #FFF;
