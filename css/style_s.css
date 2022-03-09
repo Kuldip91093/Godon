@@ -286,15 +286,19 @@
     color: #000001;
     font-size: 16px;
 }
+.howto-contact-content{
+    width: 100%;
+    padding: 30px 0;
+}
 .howto-contact-content .content-bx{
-    display: inline-block;
     width: 100%;
     max-width: 450px;
     margin: auto;
     background: #e5e5e5;
     border-radius: 10px;
-    padding: 18px 40px;
-    height: 100%;
+    padding: 18px 35px;
+    min-height: 190px;
+    margin-bottom: 15px;
 }
 .howto-contact-content .head{
     display: flex;
@@ -306,19 +310,52 @@
 }
 .howto-contact-content .head h4{
     color: #060d62;
+    font-size: 28px;
 }
 .howto-contact-content .content-number p{
     color: #d9b341;
     font-size: 45px;
     text-align: center;
+    text-shadow: 2px 2px 0 #FFF;
 }
 .howto-contact-content .content-mail{
-
+    border: 3px solid #d9b341;
+    background: #FFF;
+    text-align: center;
+    padding: 12px;
+    margin: 38px auto 0;
+}
+.howto-contact-content .content-mail p{
+    color: #070069;
+    font-size: 20px;
+    line-height: 1;
 }
 /* PURCHASE|SALE LAYER : END */
 
 
 /******************************************** RESPONSIVE ********************************************/
+@media(max-width: 1166px) {
+    /* REGULAR HEADING : START */
+    .regular-head2 .regular-head2-wrapper:before{
+        height: 15px;
+    }
+    .regular-head2 h2{
+        font-size: 24px;
+    }
+    /* REGULAR HEADING : END */
+
+    /* PURCHASE|SALES : START */
+    .howto-contact-content .head{
+        justify-content: center;
+    }
+    .howto-contact-content .head h4{
+        font-size: 24px;
+    }
+    .howto-contact-content .content-mail{
+        max-width: 260px;
+    }
+    /* PURCHASE|SALES : END */
+}
 @media(max-width: 900px) {
     /* REGULAR HEADING : START */
     .regular-head.margin-top-minus{
@@ -337,12 +374,18 @@
     .regular-head h2{
         font-size: 24px;
     }
+    .regular-head2 .regular-head2-wrapper:before{
+        height: 12px;
+    }
+    .regular-head2 h2{
+        font-size: 20px;
+    }
     /* REGULAR HEADING : END */
 
     /* PURCHASE|SALES : START */
     .purchase-sale-realstate .col-inner{
         border-width: 1px;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
     .purchase-sale-realstate .purchase-sale-box:after{
         border-width: 1px;
@@ -385,6 +428,27 @@
     }
     .purchase-sale-realstate .tabs_content_item .cont-bx h4{
         font-size: 20px;
+    }
+    .howto-contact-content .content-bx{
+        padding: 30px 20px;
+        min-height: 160px;
+    }
+    .howto-contact-content .head .icon{
+        margin-right: 15px;
+        max-width: 40px;
+    }
+    .howto-contact-content .head h4{
+        font-size: 20px;
+    }
+    .howto-contact-content .content-number p{
+        font-size: 32px;
+    }
+    .howto-contact-content .content-mail{
+        margin-top: 25px;
+        border-width: 2px;
+    }
+    .howto-contact-content .content-mail p{
+        font-size: 16px;
     }
     /* PURCHASE|SALES : END */
 }
@@ -461,6 +525,13 @@
     .purchase-sale-realstate .tabs_content_item .cont-bx h4{
         font-size: 18px;
         margin-bottom: 15px;
+    }
+    .howto-contact-content .columnn{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .howto-contact-content .head h4{
+        font-size: 18px;
     }
     /* PURCHASE|SALES : END */
 }
