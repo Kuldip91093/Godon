@@ -98,6 +98,7 @@
     padding: 26px 8px;
     background: #d9b341;
     color: #070069;
+    transition: all 0.4s;
 }
 .purchase-sale-topbar-bttns .bttn.bttn-yellow{
     background: #d9b341;
@@ -248,11 +249,28 @@
     border-bottom-color: #FFF;
 }
 .purchase-sale-realstate .tabs_content_item{
+    position: relative;
     border: 3px solid #765800;
     border-top: none;
     background: #FFF;
     border-radius: 0 0 10px 10px;
     padding: 50px 30px 30px;
+}
+.purchase-sale-realstate .tabs_content_item:before, .purchase-sale-realstate .tabs_content_item:after {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: -5px;
+    height: 10px;
+    width: 3px;
+    background-color: #765800;
+}
+.purchase-sale-realstate .tabs_content_item:after {
+    left: auto;
+    right: -3px;
+}
+.purchase-sale-realstate #SaleRealEstate .tabs_content_item:before, .purchase-sale-realstate #SaleRealEstate .tabs_content_item:after {
+    background-color: #626262;
 }
 .purchase-sale-realstate #SaleRealEstate .tabs_content_item{
     border-color: #626262;
@@ -427,6 +445,15 @@
     .purchase-sale-realstate .tabs_content_item{
         padding: 30px 15px 15px;
         border-width: 2px;
+    }
+    .purchase-sale-realstate .tabs_content_item:before, .purchase-sale-realstate .tabs_content_item:after {
+        width: 2px;
+    }
+    .purchase-sale-realstate .tabs_content_item:before {
+        left: -2px;
+    }
+    .purchase-sale-realstate .tabs_content_item:after {
+        right: -2px;
     }
     .purchase-sale-realstate .tabs_content_item .cont-bx{
         padding: 15px 0 15px 15px;
