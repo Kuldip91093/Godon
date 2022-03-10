@@ -352,6 +352,65 @@
 }
 /* PURCHASE|SALE(HOWTO PAGE) : END */
 
+/* COMPANY PAGE : START */
+.company-page-section{
+    width: 100%;
+}
+.company-page-section .columnn-inner{
+    border: 3px solid #070069;
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 150px;
+}
+.company-page-layer{
+    position: relative;
+    width: 100%;
+}
+.company-page-layer:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #d9b341;
+    user-select: none;
+    pointer-events: none
+}
+.company-page-layer .head{
+    width: 100%;
+    position: relative;
+    padding: 15px 0 15px 120px;
+}
+.company-page-layer .head:before{
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    height: calc(100% + 8px);
+    background: #070069;
+}
+.company-page-layer .head:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -9px;
+    width: 100px;
+    height: 10px;
+    margin: auto;
+    background: #d9b341;
+}
+.company-page-layer .head h3{
+    position: relative;
+    z-index: 1;
+    color: #d9b341;
+    font-size: 35px;
+}
+/* COMPANY PAGE : END */
 
 /******************************************** RESPONSIVE ********************************************/
 @media(max-width: 1166px) {
