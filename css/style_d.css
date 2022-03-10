@@ -1,0 +1,200 @@
+.custom_row_reverse {
+    flex-direction: row-reverse;
+}
+/* HEADER : START */
+main.main.top_page_header {
+    padding-top: 0;
+}
+header.site_header.top_page_header {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/* HEADER : END */
+
+/* BANNER : START */
+.banner_section {
+    background-image: url('../images/banner_image.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+}
+.banner_section .custom_container {
+    width: 100%;
+    max-width: 1068px;
+    padding: 0 15px;
+    margin: auto;
+}
+.banner_section h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 68px;
+    margin-bottom: 30px;
+}
+.banner_section p {
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 68px;
+}
+/* BANNER : END */
+
+/* NEWS : START */
+.news_section {
+    padding: 100px 0;
+}
+.line_heading {
+    position: relative;
+    display: table;
+    margin: 0 auto 20px;
+}
+.line_heading:before,
+.line_heading:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 200px;
+    height: 5px;
+}
+.line_heading:before{
+    right: 100%;
+    margin-right: 30px;
+    background: linear-gradient(270deg, #d9b341, #070069);
+}
+.line_heading:after{
+    left: 100%;
+    margin-left: 30px;
+    background: linear-gradient(90deg, #d9b341, #070069);
+}
+.line_heading h3 {
+    text-align: center;
+    font-size: 35px;
+    color: #060d62;
+    line-height: 40px;
+    display: table;
+    margin: auto;
+}
+.line_heading p {
+    text-align: center;
+    font-size: 25px;
+    color: #000000;
+    line-height: 32px;
+    display: table;
+    margin: auto;
+}
+.news_section .news_content {
+    padding: 48px 0;
+    background-image: url(../images/news_bg_image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 4px solid #d9b341;
+}
+.news_section .news_content .news_content_inner {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    background-color: #ccdaeb;
+    padding: 25px 15px;
+}
+.news_section .news_content .news_content_inner .news_content_text {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+} 
+.news_section .news_content .news_table {
+    display: table;
+    width: auto;
+}
+.news_section .news_content .news_table_row {
+    display: table-row;
+}
+.news_section .news_content .news_table_th, 
+.news_section .news_content .news_table_td {
+    display: table-cell;
+}
+.news_section .news_content .news_table p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #000;
+}
+.news_section .news_content .news_table_th p {
+    min-width: 110px;
+}
+.news_section .news_content .news_content_inner .news_content_text a {
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    text-align: center;
+    display: table;
+    line-height: 50px;
+    background-color: #d9b341;
+    color: #fff;
+    font-size: 20px;
+}
+/* NEWS : END */
+
+/* BUSINESS : START */
+.busniess_section .custom_container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 15px;
+}
+.busniess_box .busniess_box_content {
+    border: 4px solid #d9b341;
+    padding: 45px;
+}
+.busniess_box .custom_row {
+    align-items: center;
+    margin: 0;
+}
+.busniess_box .custom_col_image {
+    flex: 0 0 500px;
+    max-width: 500px;
+}
+.busniess_box .custom_col_text {
+    flex: 0 0 calc(100% - 500px);
+    max-width: calc(100% - 500px);
+}
+.busniess_image_box {
+    position: relative;
+    padding-top: 60%;
+    overflow: hidden;
+}
+.busniess_image_box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center right;
+}
+.busniess_management_box .busniess_image_box img {
+    object-position: center left;
+}
+/* BUSINESS : END */
