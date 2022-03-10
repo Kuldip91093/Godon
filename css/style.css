@@ -44,11 +44,19 @@ img{
     max-width: 100%;
     display: block;
 }
-.cpc {
+.cpc, .cpc-675, .cpc-1166 {
     display: block !important;
 }
-.csp {
+.csp, .csp-675, .csp-1166 {
     display: none !important;
+}
+@media (max-width: 1166px){
+    .cpc-1166{
+        display: none !important;
+    }
+    .csp-1166{
+        display: block !important;
+    }
 }
 @media (max-width: 900px){
     .cpc{
@@ -57,6 +65,15 @@ img{
     .csp{
         display: block !important;
     }
+}
+@media (max-width: 675px){
+    .cpc-675{
+        display: none !important;
+    }
+    .csp-675{
+        display: block !important;
+    }
+
 }
 /*common css end*/
 

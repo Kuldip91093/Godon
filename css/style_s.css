@@ -1,4 +1,4 @@
-/* REGULAR BANNER : START */
+/* regular banner css start */
 .regular-banner{
     position: relative;
     width: 100%;
@@ -6,9 +6,9 @@
 .regular-banner-img{
     width: 100%;
 }
-/* REGULAR BANNER : END */
+/* regular banner css end */
 
-/* REGULAR HEADING : START */
+/* regular head 1 css start */
 .regular-head{
     width: 100%;
     text-align: center;
@@ -48,47 +48,43 @@
     font-size: 48px;
     line-height: 1;
 }
-/* REGULAR HEADING : END */
+/* regular head 1 css end */
 
-/* REGULAR HEADING--2 : START */
-.regular-head2{
+/* regular head 2 css start */
+.underline_heading{
     width: 100%;
     text-align: center;
     padding: 30px 0;
 }
-.regular-head2 .regular-head2-wrapper{
+.underline_heading .custom_container{
+    position: relative;
+}
+.underline_heading h2 span{
     position: relative;
     display: inline-block;
 }
-.regular-head2 h2 span{
+.underline_heading h2 span:before{
+    content: '';
     display: block;
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
+    left: -10px;
+    right: -10px;
+    width: calc(100% + 20px);
     height: 22px;
     background: #d9b341;
     z-index: -1;
 }
-.regular-head2 h2 span:nth-child(2){
-    bottom: 40px;
-}
-.regular-head2 h2 span:nth-child(3){
-    bottom: 60px;
-}
-.regular-head2 h2{
+.underline_heading h2{
     position: relative;
     z-index: 1;
     color: #070069;
     font-size: 30px;
     line-height: 1.5;
 }
-/* REGULAR HEADING--2 : END */
+/* regular head 2 css end */
 
-/* PURCHASE|SALE(HOWTO PAGE) : START */
-
-/* ==> TOPBAR */
+/* how-to page css start */
 .purchase-sale-topbar-bttns{
     margin-bottom: 130px;
 }
@@ -127,27 +123,35 @@
     font-size: 30px;
 }
 
-/* ==> REALSTATE */
 .purchase-sale-realstate{
     width: 100%;
 }
-.purchase-sale-realstate .col-inner{
+.realstate-layer{
+    margin-bottom: 150px;
+}
+.yellow_title_bg{
     border-width: 3px;
     border-style: solid;
     border-color: #d9b341;
     background: #fff7e1;
     padding: 6px;
-    margin-bottom: 150px;
 }
-.purchase-sale-realstate #SaleRealEstate .col-inner{
-    border-color: #070069;
-    background: #eff7ff;
-}
-.purchase-sale-realstate .purchase-sale-box{
+.blue_inner_border{
     width: 100%;
     position: relative;
 }
-.purchase-sale-realstate .purchase-sale-box:after{
+.blue_title_bg{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #070069;
+    background: #fff7e1;
+    padding: 6px;
+}
+.yellow_inner_border{
+    width: 100%;
+    position: relative;
+}
+.blue_inner_border:after, .yellow_inner_border:after{
     content: '';
     position: absolute;
     top: 0;
@@ -158,51 +162,62 @@
     height: 100%;
     border-width: 3px;
     border-style: solid;
-    border-color: #070069;
     user-select: none;
     pointer-events: none;
 }
-.purchase-sale-realstate #SaleRealEstate .purchase-sale-box:after{
+.blue_inner_border:after{
+    border-color: #070069;
+}
+.yellow_inner_border:after{
     border-color: #d9b341;
 }
-.purchase-sale-realstate .head{
+.heading_with_bg{
     width: 100%;
     position: relative;
     padding: 15px 0 15px 120px;
 }
-.purchase-sale-realstate .head:before{
+.heading_with_bg:before{
     content: '';
     position: absolute;
     top: -10px;
     left: -10px;
     right: -10px;
     height: calc(100% + 10px);
+}
+.yellow_title_bg .heading_with_bg:before{
     background: #d9b341;
 }
-.purchase-sale-realstate #SaleRealEstate .head:before{
+.blue_title_bg .heading_with_bg:before{
     background: #070069;
 }
-.purchase-sale-realstate .head:after{
+
+.heading_with_bg:after{
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -13px;
+    left: -10px;
     width: 100px;
     height: 10px;
     margin: auto;
+}
+.yellow_title_bg .heading_with_bg:after{
     background: #070069;
 }
-.purchase-sale-realstate #SaleRealEstate .head:after{
+.blue_title_bg .heading_with_bg:after{
     background: #d9b341;
 }
-.purchase-sale-realstate .head h3{
+
+.heading_with_bg h3{
     position: relative;
     z-index: 1;
-    color: #070069;
+    color: #FFF;
     font-size: 35px;
 }
-.purchase-sale-realstate #SaleRealEstate .head h3{
+.yellow_title_bg .heading_with_bg h3{
+    color: #070069;
+}
+.blue_title_bg .heading_with_bg h3{
     color: #d9b341;
 }
 .purchase-sale-realstate .other-cont{
@@ -312,7 +327,6 @@
     padding: 30px 0;
 }
 
-/* => How To Contact */
 .howto-contact-section{
     width: 100%;
     padding-bottom: 80px;
@@ -339,87 +353,48 @@
     color: #060d62;
     font-size: 28px;
 }
-.howto-contact-content .content-number p{
+.howto-contact-content .content-number{
+    text-align: center;
+}
+.howto-contact-content .content-number a{
+    display: inline-block;
     color: #d9b341;
     font-size: 45px;
     text-align: center;
     text-shadow: 2px 2px 0 #FFF;
+    transition: all 0.4s;
+}
+.howto-contact-content .content-number a:hover,
+.howto-contact-content .content-number a:focus{
+    color: #070069;
 }
 .howto-contact-content .content-mail{
+    display: block;
     border: 3px solid #d9b341;
     background: #FFF;
     text-align: center;
     padding: 12px;
     margin: 38px auto 0;
+    transition: all 0.4s;
+}
+.howto-contact-content .content-mail:hover,
+.howto-contact-content .content-mail:focus{
+    background-color: #d9b341;
 }
 .howto-contact-content .content-mail p{
     color: #070069;
     font-size: 20px;
     line-height: 1;
 }
-/* PURCHASE|SALE(HOWTO PAGE) : END */
+/* how-to page css end */
 
-/* COMPANY PAGE : START */
+/* company page css start */
 .company-page-section{
     width: 100%;
 }
-.company-page-section .columnn-inner{
-    border: 3px solid #070069;
-    width: 100%;
-    padding: 6px;
-    margin-bottom: 150px;
-    background-image: url('../images/company-layer-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
 .company-page-layer{
-    position: relative;
     width: 100%;
-}
-.company-page-layer:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    border: 3px solid #d9b341;
-    user-select: none;
-    pointer-events: none
-}
-.company-page-layer .head{
-    width: 100%;
-    position: relative;
-    padding: 15px 0 15px 120px;
-}
-.company-page-layer .head:before{
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: -8px;
-    right: -8px;
-    height: calc(100% + 8px);
-    background: #070069;
-}
-.company-page-layer .head:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -9px;
-    width: 100px;
-    height: 10px;
-    margin: auto;
-    background: #d9b341;
-}
-.company-page-layer .head h3{
-    position: relative;
-    z-index: 1;
-    color: #d9b341;
-    font-size: 35px;
+    margin-bottom: 50px;
 }
 .company-page-layer .other-content{
     padding: 40px 30px;
@@ -433,12 +408,12 @@
 .company-page-layer h4 span{
     color: #0000ff;
 }
-.company-page-layer.pride-content .regular-head2 h2{
+.company-page-layer.pride-content .underline_heading h2{
     text-align: left;
     padding: 0 30px 0 50px;
     font-weight: 600;
 }
-.company-page-layer.pride-content .regular-head2 h2:before{
+.company-page-layer.pride-content .underline_heading h2:before{
     content: '一、';
     font-size: 22px;
     color: #070069;
@@ -478,26 +453,26 @@
 .company-page-layer table td:first-child{
     text-align: center;
 }
-/* COMPANY PAGE : END */
+/* company page css end */
 
-/******************************************** RESPONSIVE ********************************************/
+/* responsive css start */
 @media(max-width: 1166px) {
-    /* REGULAR HEADING--2 : START */
-    .regular-head2 h2{
+    /* regular head 1 css start */
+    .regular-head h2{
+        font-size: 32px;
+    }
+    /* regular head 1 css start */
+
+    /* regular head 2 css start */
+    .underline_heading h2{
         font-size: 24px;
     }
-    .regular-head2 h2 span{
+    .underline_heading h2 span:before{
         height: 15px;
     }
-    .regular-head2 h2 span:nth-child(2){
-        bottom: 48px;
-    }
-    .regular-head2 h2 span:nth-child(3){
-        bottom: 72px;
-    }
-    /* REGULAR HEADING--2 : END */
+    /* regular head 2 css end */
 
-    /* PURCHASE|SALES(HOWTO PAGE) : START */
+    /* how-to page css start */
     .howto-contact-content .head{
         justify-content: center;
     }
@@ -507,10 +482,10 @@
     .howto-contact-content .content-mail{
         max-width: 260px;
     }
-    /* PURCHASE|SALES(HOWTO PAGE) : END */
+    /* how-to page css end */
 }
 @media(max-width: 900px) {
-    /* REGULAR HEADING : START */
+    /* regular head 1 css start */
     .regular-head.margin-top-minus{
         padding-bottom: 50px;
     }
@@ -527,45 +502,38 @@
     .regular-head h2{
         font-size: 24px;
     }
-    /* REGULAR HEADING : END */
+    /* regular head 1 css end */
 
-    /* REGULAR HEADING--2 : START */
-    .regular-head2 h2{
+    /* regular head 2 css start */
+    .underline_heading h2{
         font-size: 20px;
     }
-    .regular-head2 h2 span{
-        height: 12px;
-    }
-    .regular-head2 h2 span:nth-child(2){
-        bottom: 30px;
-    }
-    .regular-head2 h2 span:nth-child(3){
-        bottom: 60px;
-    }
-    /* REGULAR HEADING--2 : END */
+    /* regular head 2 css end */
 
-    /* PURCHASE|SALES(HOWTO PAGE) : START */
-    .purchase-sale-realstate .col-inner{
-        border-width: 1px;
+    /* how-to page css start */
+    .realstate-layer{
         margin-bottom: 80px;
     }
-    .purchase-sale-realstate .purchase-sale-box:after{
+    .yellow_title_bg, .blue_title_bg{
         border-width: 1px;
     }
-    .purchase-sale-realstate .head:before{
+    .blue_inner_border:after, .yellow_inner_border:after{
+        border-width: 1px;
+    }
+    .heading_with_bg:before{
         top: -6px;
         left: -6px;
         right: -6px;
     }
-    .purchase-sale-realstate .head:after{
-        width: 60px;
-        height: 5px;
-        left: -6px;
-    }
-    .purchase-sale-realstate .head{
+    .heading_with_bg{
         padding-left: 80px;
     }
-    .purchase-sale-realstate .head h3{
+    .heading_with_bg:after{
+        width: 60px;
+        height: 5px;
+        left: -7px;
+    }
+    .heading_with_bg h3{
         font-size: 24px;
     }
     .purchase-sale-realstate .other-cont{
@@ -611,7 +579,7 @@
     .howto-contact-content .head h4{
         font-size: 20px;
     }
-    .howto-contact-content .content-number p{
+    .howto-contact-content .content-number a{
         font-size: 32px;
     }
     .howto-contact-content .content-mail{
@@ -621,11 +589,11 @@
     .howto-contact-content .content-mail p{
         font-size: 16px;
     }
-    /* PURCHASE|SALES(HOWTO PAGE) : END */
+    /* how-to page css end */
 }
 
 @media(max-width: 675px) {
-    /* REGULAR HEADING : START */
+    /* regular head 1 css start */
     .regular-head h2{
         font-size: 20px;
     }
@@ -642,9 +610,15 @@
     .regular-head-wrapper:after{
         left: 50%;
     }
-    /* REGULAR HEADING : END */
+    /* regular head 1 css end */
 
-    /* PURCHASE|SALES(HOWTO PAGE) : START */
+    /* regular head 2 css start */
+    .underline_heading h2{
+        font-size: 18px;
+    }
+    /* regular head 2 css end */
+
+    /* how-to page css start */
     .purchase-sale-topbar-bttns{
         margin-bottom: 50px;
     }
@@ -659,17 +633,17 @@
         font-size: 24px;
     }
 
-    .purchase-sale-realstate .col-inner{
+    .realstate-layer{
         margin-bottom: 50px;
     }
-    .purchase-sale-realstate .head{
+    .heading_with_bg{
         padding-left: 50px;
     }
-    .purchase-sale-realstate .head:after{
+    .heading_with_bg:after{
         height: 3px;
         width: 30px;
     }
-    .purchase-sale-realstate .head h3{
+    .heading_with_bg h3{
         font-size: 20px;
     }
     .purchase-sale-realstate .other-cont{
@@ -704,5 +678,6 @@
     .howto-contact-content .head h4{
         font-size: 18px;
     }
-    /* PURCHASE|SALES(HOWTO PAGE) : END */
+    /* how-to page css end */
 }
+/* responsive css end */
