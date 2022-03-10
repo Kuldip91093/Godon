@@ -211,7 +211,6 @@
 .heading_with_bg h3{
     position: relative;
     z-index: 1;
-    color: #FFF;
     font-size: 35px;
 }
 .yellow_title_bg .heading_with_bg h3{
@@ -395,6 +394,14 @@
 .company-page-layer{
     width: 100%;
     margin-bottom: 50px;
+}
+.company-page-layer .blue_title_bg{
+    background: url('../images/company-layer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.company-page-layer .heading_with_bg h3{
+    color: #FFF;
 }
 .company-page-layer .other-content{
     padding: 40px 30px;
