@@ -60,8 +60,8 @@
     position: relative;
     display: inline-block;
 }
-.regular-head2 .regular-head2-wrapper:before{
-    content: '';
+.regular-head2 h2 span{
+    display: block;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -69,6 +69,13 @@
     width: 100%;
     height: 22px;
     background: #d9b341;
+    z-index: -1;
+}
+.regular-head2 h2 span:nth-child(2){
+    bottom: 40px;
+}
+.regular-head2 h2 span:nth-child(3){
+    bottom: 60px;
 }
 .regular-head2 h2{
     position: relative;
@@ -361,6 +368,10 @@
     width: 100%;
     padding: 6px;
     margin-bottom: 150px;
+    background-image: url('../images/company-layer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 .company-page-layer{
     position: relative;
@@ -410,16 +421,79 @@
     color: #d9b341;
     font-size: 35px;
 }
+.company-page-layer .other-content{
+    padding: 40px 30px;
+}
+.company-page-layer h4{
+    color: #000;
+    font-size: 35px;
+    text-shadow: 8px 8px 8px rgba(56, 56, 56, 0.9);
+    text-align: center;
+}
+.company-page-layer h4 span{
+    color: #0000ff;
+}
+.company-page-layer.pride-content .regular-head2 h2{
+    text-align: left;
+    padding: 0 30px 0 50px;
+    font-weight: 600;
+}
+.company-page-layer.pride-content .regular-head2 h2:before{
+    content: '一、';
+    font-size: 22px;
+    color: #070069;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    line-height: 1;
+}
+.company-page-layer p{
+    color: #000;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+.company-page-layer .table-wrapper{
+    width: 100%;
+    overflow-x: auto;
+}
+.company-page-layer table{
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 20px;
+    color: #000;
+}
+.company-page-layer table th,
+.company-page-layer table td{
+    border: 1px solid #d9b341;
+    padding: 10px 50px;
+}
+.company-page-layer table tr:first-child th,
+.company-page-layer table tr:first-child td{
+    border-top: 0;
+}
+.company-page-layer table th:first-child,
+.company-page-layer table td:first-child{
+    text-align: center;
+}
 /* COMPANY PAGE : END */
 
 /******************************************** RESPONSIVE ********************************************/
 @media(max-width: 1166px) {
     /* REGULAR HEADING--2 : START */
-    .regular-head2 .regular-head2-wrapper:before{
-        height: 15px;
-    }
     .regular-head2 h2{
         font-size: 24px;
+    }
+    .regular-head2 h2 span{
+        height: 15px;
+    }
+    .regular-head2 h2 span:nth-child(2){
+        bottom: 48px;
+    }
+    .regular-head2 h2 span:nth-child(3){
+        bottom: 72px;
     }
     /* REGULAR HEADING--2 : END */
 
@@ -450,17 +524,23 @@
     .regular-head-wrapper:after{
         margin-left: 15px;
     }
-    /* REGULAR HEADING : END */
-
-    /* REGULAR HEADING--2 : START */
     .regular-head h2{
         font-size: 24px;
     }
-    .regular-head2 .regular-head2-wrapper:before{
-        height: 12px;
-    }
+    /* REGULAR HEADING : END */
+
+    /* REGULAR HEADING--2 : START */
     .regular-head2 h2{
         font-size: 20px;
+    }
+    .regular-head2 h2 span{
+        height: 12px;
+    }
+    .regular-head2 h2 span:nth-child(2){
+        bottom: 30px;
+    }
+    .regular-head2 h2 span:nth-child(3){
+        bottom: 60px;
     }
     /* REGULAR HEADING--2 : END */
 

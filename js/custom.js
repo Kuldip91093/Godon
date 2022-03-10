@@ -103,3 +103,52 @@ $(document).ready(function(){
 	},100);
 
 });
+
+
+//**** */ COUNT NUMBER OF LIENS AND APPEND IT : START ****
+// COUNT NUMBER OF ELEMENT LINES
+function countElemLines(yourElement) {
+	var el = $(yourElement);
+	var elHeight = el.height();
+	var elLineHeight = parseInt(el.css('line-height'));
+	var ellines = elHeight / elLineHeight;
+	return ellines;
+}
+
+// Add Attr(no-of-line)
+function attrNoLines(yourElement) {
+	$(yourElement).each(function() {
+		var currElem = $(this)
+		var noOfLines = countElemLines(currElem);
+		currElem.attr('no-of-lines', noOfLines);
+		return noOfLines;
+	});
+}
+
+// Append Span Element To repeating lines()
+function appendPerLineData(yourElement, appendHtml){
+	$(window).on('load resize', function(){
+		var currElem = yourElement;
+		attrNoLines(currElem);
+
+		$(currElem).each(function() {
+			$(this).find('span').remove();
+			var noOfLinesAttr = $(this).attr('no-of-lines');
+
+			let i = 0;
+			while(i < noOfLinesAttr){
+				$(this).append(appendHtml);
+				i++;
+			}
+		});
+	});
+}
+
+// Note** 	Use this function where you want to append span per lines.
+// 			In this function 1-arrgument => whom you want to target example('.regular-head2 h2');
+// 			In this function 2-arrgument => what you want to append(HTML|TEXT ONLY)* example('<span></span>');
+// appendPerLineData();
+//**** */ COUNT NUMBER OF LIENS AND APPEND IT : END ****
+
+
+appendPerLineData('.regular-head2 h2', '<span></span>');
