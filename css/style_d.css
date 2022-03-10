@@ -152,6 +152,12 @@ header.site_header.top_page_header {
     background-color: #d9b341;
     color: #fff;
     font-size: 20px;
+    transition: all 0.4s;
+    border: 1px solid #d9b341;
+}
+.news_section .news_content .news_content_inner .news_content_text a:hover {
+    color: #d9b341;
+    background-color: #fff;
 }
 .news_section .news_content .news_content_inner .news_content_text a span {
     color: #060d62;
@@ -159,7 +165,7 @@ header.site_header.top_page_header {
 }
 /*news section css end*/
 
-/* BUSINESS : START */
+/*business section css start*/
 .busniess_section {
     overflow: hidden;
 }
@@ -253,14 +259,19 @@ header.site_header.top_page_header {
     border: 1px solid #070069;
     font-size: 18px;
     color: #000;
+    transition: all 0.4s;
+}
+.busniess_box a:hover {
+    background-color: #070069;
+    color: #fff;
 }
 .busniess_box a span {
     color: #d9b341;
     margin-right: 12px;
 }
-/* BUSINESS : END */
+/*business section css end*/
 
-/* TRADING : END */
+/*trading section css start*/
 .trading_section {
     padding: 100px 0;
 }
@@ -332,36 +343,38 @@ header.site_header.top_page_header {
     background-color: #d9b341;
     font-weight: 500;
     font-size: 18px;
+    transition: all 0.4s;
+}
+.trading_content a:hover {
+    color: #d9b341;
+    background-color: #fff;
 }
 .trading_content a span {
     color: #060d62;
 }
-/* TRADING : END */
+/*trading section css end*/
 
-/* CONTACT : START */
+/*contact section css start*/
 .contact_section .howto-contact-content .content-bx {
     background-color: #fff;
 }
 .contact_section .howto-contact-content {
     padding-bottom: 37px;
 }
-/* CONTACT : END */
+/*contact section css end*/
 
-/******************************************** RESPONSIVE ********************************************/
+/*responsive css start*/
 @media(max-width: 1166px) {
-    /*grid css*/
     .custom_col_4 {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
     }
-    /*custon container css*/
     .trading_section .custom_container,
     .busniess_section .custom_container,
     .banner_section .custom_container {
         max-width: 900px;
     }
-    /*banner section css start*/
     .banner_section {
         padding-bottom: 80px;
     }
@@ -374,8 +387,6 @@ header.site_header.top_page_header {
         font-size: 28px;
         line-height: 36px;
     }
-    /*banner section css end*/
-    /*news section css end*/
     .trading_section,
     .news_section {
         padding: 60px 0;
@@ -404,8 +415,6 @@ header.site_header.top_page_header {
         line-height: 40px;
         font-size: 18px;
     }
-    /*news section css end*/
-    /*busniess section css end*/
     .busniess_box .busniess_box_content {
         padding: 30px;
     }
@@ -436,16 +445,11 @@ header.site_header.top_page_header {
         line-height: 50px;
         font-size: 16px;
     }
-    /*busniess section css end*/
-    /*trading section css start*/
-
     .trading_content {
         padding: 30px 0;
     }
-    /*trading section css end*/
 }
 @media(max-width: 900px) {
-    /*banner section css start*/
     .banner_section h1 {
         font-size: 38px;
         line-height: 43px;
@@ -455,8 +459,6 @@ header.site_header.top_page_header {
         font-size: 22px;
         line-height: 28px;
     }
-    /*banner section css end*/
-    /*news section css start*/
     .line_heading h3 {
         font-size: 26px;
         line-height: 29px;
@@ -482,8 +484,6 @@ header.site_header.top_page_header {
     .news_section .news_content .news_content_inner {
         padding: 15px;
     }
-    /*news section css end*/
-    /*busniess section css end*/
     .busniess_box .busniess_box_content {
         padding: 15px;
     }
@@ -510,7 +510,6 @@ header.site_header.top_page_header {
     .busniess_box.busniess_real_estate_box {
         margin-bottom: 20px;
     }
-    /*busniess section css end*/
 }
 @media(max-width: 675px) {
     .custom_col_4 {
