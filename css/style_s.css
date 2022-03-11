@@ -330,15 +330,22 @@
     width: 100%;
     padding-bottom: 80px;
 }
-.howto-contact-content .content-bx{
+.howto-contact-content .content-bx {
     width: 100%;
     max-width: 450px;
     margin: auto;
     background: #e5e5e5;
     border-radius: 10px;
     padding: 18px 35px;
-    min-height: 190px;
+    min-height: 200px;
     margin-bottom: 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .howto-contact-content .head{
     display: flex;
@@ -518,6 +525,9 @@
     /* regular head 2 css end */
 
     /* how-to page css start */
+    .howto-contact-section{
+        padding-bottom: 40px;
+    }
     .realstate-layer{
         margin-bottom: 80px;
     }
@@ -577,7 +587,7 @@
     }
     .howto-contact-content .content-bx{
         padding: 30px 20px;
-        min-height: 160px;
+        min-height: 185px;
     }
     .howto-contact-content .head .icon{
         margin-right: 15px;
