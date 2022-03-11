@@ -346,7 +346,6 @@ header.site_header.top_page_header {
     transition: all 0.4s;
 }
 .trading_content a:hover {
-    color: #d9b341;
     background-color: #fff;
 }
 .trading_content a span {
