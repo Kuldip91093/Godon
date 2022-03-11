@@ -1,5 +1,26 @@
 /*fonts css start*/
-
+@font-face {
+    font-family: 'Yu Mincho';
+    src: url('../fonts/YuMincho-Demibold.eot');
+    src: url('../fonts/YuMincho-Demibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YuMincho-Demibold.woff2') format('woff2'),
+        url('../fonts/YuMincho-Demibold.woff') format('woff'),
+        url('../fonts/YuMincho-Demibold.ttf') format('truetype'),
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Yu Mincho';
+    src: url('../fonts/YuMincho-Regular.eot');
+    src: url('../fonts/YuMincho-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/YuMincho-Regular.woff2') format('woff2'),
+    url('../fonts/YuMincho-Regular.woff') format('woff'),
+    url('../fonts/YuMincho-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 /*fonts css end*/
 
 /*common css start*/
@@ -499,7 +520,13 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 }
 /*footer css end*/
 
-/******************************************** RESPONSIVE ********************************************/
+/*faq section css start*/
+.faq_section {
+    padding-bottom: 120px;
+}
+
+/*faq section css end*/
+
 /*responsive css start*/
 @media(max-width: 1166px) {
     /* MAIN : START */

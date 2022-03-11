@@ -102,4 +102,11 @@ $(document).ready(function(){
 		console.log(triggerEl)
 	},100);
 
+	$(function() {
+		$(".faq_content").accordion({
+			heightStyle: "content",
+			collapsible: true
+		});
+	});
+
 });
