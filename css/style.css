@@ -5,7 +5,7 @@
     src: url('../fonts/YuMincho-Demibold.eot?#iefix') format('embedded-opentype'),
         url('../fonts/YuMincho-Demibold.woff2') format('woff2'),
         url('../fonts/YuMincho-Demibold.woff') format('woff'),
-        url('../fonts/YuMincho-Demibold.ttf') format('truetype'),
+        url('../fonts/YuMincho-Demibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -99,6 +99,10 @@ img{
 /*common css end*/
 
 /*common grid css start*/
+.custom_container_fluid{
+    width: 100%;
+    padding: 0 15px;
+}
 .custom_container{
     width: 100%;
     max-width: 1030px;

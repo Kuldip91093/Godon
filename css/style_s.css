@@ -46,6 +46,7 @@
     z-index: 1;
     color: #070069;
     font-size: 48px;
+    font-weight: 600;
     line-height: 1;
 }
 /* regular head 1 css end */
@@ -80,6 +81,7 @@
     z-index: 1;
     color: #070069;
     font-size: 30px;
+    font-weight: 600;
     line-height: 1.5;
 }
 /* regular head 2 css end */
@@ -98,6 +100,7 @@
     width: 100%;
     max-width: 400px;
     font-size: 15px;
+    font-weight: 600;
     padding: 26px 8px;
     background: #d9b341;
     color: #070069;
@@ -179,9 +182,9 @@
 .heading_with_bg:before{
     content: '';
     position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
+    top: -9px;
+    left: -9px;
+    right: -9px;
     height: calc(100% + 10px);
 }
 .yellow_title_bg .heading_with_bg:before{
@@ -212,6 +215,7 @@
     position: relative;
     z-index: 1;
     font-size: 35px;
+    font-weight: 600;
 }
 .yellow_title_bg .heading_with_bg h3{
     color: #070069;
@@ -230,6 +234,7 @@
 .purchase-sale-realstate .para p{
     color: #000;
     font-size: 20px;
+    font-weight: 600;
 }
 .purchase-sale-realstate .custom_tabs_nav{
     display: flex;
@@ -243,6 +248,7 @@
     border-radius: 10px 10px 0 0;
     color: #070069;
     font-size: 25px;
+    font-weight: 600;
     line-height: 1;
     background: #d9b341;
     text-transform: uppercase;
@@ -314,12 +320,14 @@
 .purchase-sale-realstate .tabs_content_item .cont-bx h4{
     color: #070069;
     font-size: 25px;
+    font-weight: 600;
     margin-bottom: 30px;
     text-align: center;
 }
 .purchase-sale-realstate .tabs_content_item .cont-bx p{
     color: #000001;
     font-size: 16px;
+    font-weight: 600;
 }
 .howto-contact-content{
     width: 100%;
@@ -358,6 +366,7 @@
 .howto-contact-content .head h4{
     color: #060d62;
     font-size: 28px;
+    font-weight: 600;
 }
 .howto-contact-content .content-number{
     text-align: center;
@@ -366,6 +375,7 @@
     display: inline-block;
     color: #d9b341;
     font-size: 45px;
+    font-weight: 600;
     text-align: center;
     text-shadow: 2px 2px 0 #FFF;
     transition: all 0.4s;
@@ -390,6 +400,7 @@
 .howto-contact-content .content-mail p{
     color: #070069;
     font-size: 20px;
+    font-weight: 600;
     line-height: 1;
 }
 /* how-to page css end */
@@ -416,6 +427,7 @@
 .company-page-layer h4{
     color: #000;
     font-size: 35px;
+    font-weight: 600;
     text-shadow: 8px 8px 8px rgba(56, 56, 56, 0.9);
     text-align: center;
 }
@@ -439,6 +451,7 @@
 .company-page-layer p{
     color: #000;
     font-size: 20px;
+    font-weight: 600;
     line-height: 1.5;
     padding: 0 20px;
     margin-bottom: 40px;
@@ -452,6 +465,7 @@
     border-collapse: collapse;
     width: 100%;
     font-size: 20px;
+    font-weight: 600;
     color: #000;
 }
 .company-page-layer table th,
@@ -468,6 +482,135 @@
     text-align: center;
 }
 /* company page css end */
+
+/* sales page css start */
+.sales-management-section .underline_heading h2{
+    color: #000000;
+    font-size: 42px;
+}
+.sales-management-section .underline_heading h2 span:before{
+    height: 40px;
+}
+.sales-management-para{
+    padding: 20px 0 50px;
+    width: 100%;
+    max-width: 845px;
+    margin: auto;
+}
+.sales-management-para p{
+    color: #060d62;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.sales-management-para p:last-child{
+    margin-bottom: 0;
+}
+.sales-fee-section{
+    width: 100%;
+    background: linear-gradient(90deg, #d9b341, #e4d199);
+    padding: 10px 0;
+}
+.sales-fee-wrapper{
+    width: 100%;
+    background: #060d62;
+    color: #FFF;
+    padding: 50px 0;
+    text-align: center;
+}
+.sales-fee-wrapper h3{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.sales-fee-wrapper p{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+.sales-fee-wrapper h5{
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 0 0 25px rgba(255, 0, 0, 0.75), 0 0 25px rgba(255, 0, 0, 0.75), 0 0 25px rgba(255, 0, 0, 0.75), 0 0 25px rgba(255, 0, 0, 0.75);
+}
+.sales-rent-section{
+    width: 100%;
+    padding: 85px 0 20px;
+    background: #e5e5e5;
+}
+.sales-rent-section .custom_col_6{
+    margin-bottom: 85px;
+}
+.sales-rent-layer{
+    width: 100%;
+    max-width: 445px;
+    margin: auto;
+    background: #FFF;
+    border: 5px solid #d9b341;
+    padding: 45px 45px 40px;
+    box-shadow: 20px 20px #626262;
+    height: 100%;
+    text-align: center;
+}
+.sales-rent-layer h4{
+    color: #060d62;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 45px;
+}
+.sales-rent-layer p{
+    color: #060d62;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+.sales-service-section{
+    width: 100%;
+    padding: 100px 0 0;
+}
+.sales-service-head{
+    margin-bottom: 50px;
+}
+.sales-service-head h2{
+    color: #060d62;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+.sales-service-layer{
+    width: 100%;
+    background: #eed06e;
+    color: #FFF;
+    margin-bottom: 70px;
+    padding: 26px 0;
+}
+.sales-service-layer .custom_row{
+    margin: 0;
+    width: 100%;
+    align-items: center;
+}
+.sales-service-layer .custom_col_6{
+    padding: 0;
+}
+.sales-service-img img{
+    width: 100%;
+}
+.sales-service-content{
+    padding: 0 45px;
+}
+.sales-service-content h4{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+.sales-service-content p{
+    color: #060d62;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* sales page css end */
 
 /* responsive css start */
 @media(max-width: 1166px) {
@@ -497,11 +640,42 @@
         max-width: 260px;
     }
     /* how-to page css end */
+
+    /* company page css start */
+    .company-page-layer.pride-content .underline_heading h2{
+        padding: 0 0 0 40px;
+    }
+    .company-page-layer.pride-content .underline_heading h2:before{
+        top: 9px;
+        left: 0;
+    }
+    .company-page-layer p{
+        padding: 0;
+    }
+    /* company page css end */
+
+    /* sales page css start */
+    .sales-management-section .underline_heading h2{
+        font-size: 30px;
+    }
+    .sales-management-section .underline_heading h2 span:before{
+        height: 20px;
+    }
+    .sales-management-para{
+        max-width: 700px;
+    }
+    .sales-management-para p{
+        font-size: 20px;
+    }
+    .sales-service-head h2{
+        font-size: 36px;
+    }
+    /* sales page css end */
 }
 @media(max-width: 900px) {
     /* regular head 1 css start */
     .regular-head.margin-top-minus{
-        padding-bottom: 50px;
+        padding-bottom: 0;
     }
     .regular-head-wrapper:before, .regular-head-wrapper:after{
         width: 120px;
@@ -562,7 +736,8 @@
     .purchase-sale-realstate .para p{
         font-size: 18px;
     }
-    .purchase-sale-realstate .custom_tabs_nav a, .purchase-sale-realstate a.r-tabs-anchor{
+    .purchase-sale-realstate .custom_tabs_nav a,
+    .purchase-sale-realstate a.r-tabs-anchor{
         font-size: 20px;
         border-width: 2px;
     }
@@ -570,7 +745,8 @@
         padding: 30px 15px 15px;
         border-width: 2px;
     }
-    .purchase-sale-realstate .tabs_content_item:before, .purchase-sale-realstate .tabs_content_item:after {
+    .purchase-sale-realstate .tabs_content_item:before,
+    .purchase-sale-realstate .tabs_content_item:after {
         width: 2px;
     }
     .purchase-sale-realstate .tabs_content_item:before {
@@ -607,8 +783,74 @@
         font-size: 16px;
     }
     /* how-to page css end */
-}
 
+    /* company page css start */
+    .company-page-section{
+        padding-top: 50px;
+    }
+    .company-page-layer.pride-content .underline_heading h2{
+        padding: 0 0 0 30px;
+    }
+    .company-page-layer.pride-content .underline_heading h2:before{
+        top: 7px;
+        font-size: 20px;
+    }
+    /* company page css end */
+
+    /* sales page css start */
+    .sales-fee-wrapper h3{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .sales-fee-wrapper p{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .sales-fee-wrapper h5{
+        font-size: 30px;
+    }
+    .sales-rent-section{
+        padding: 50px 0 30px;
+    }
+    .sales-rent-section .custom_col_6{
+        margin-bottom: 30px;
+    }
+    .sales-rent-layer{
+        padding: 30px;
+        border-width: 3px;
+        box-shadow: 10px 10px #626262;
+    }
+    .sales-rent-layer h4{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .sales-rent-layer p{
+        font-size: 16px;
+    }
+    .sales-service-layer{
+        padding: 0;
+    }
+    .sales-service-layer .custom_col_6{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .sales-service-content{
+        padding: 40px;
+    }
+    .sales-service-section{
+        padding: 50px 0 0;
+    }
+    .sales-service-layer{
+        margin-bottom: 50px;
+    }
+    .sales-service-head{
+        margin-bottom: 30px;
+    }
+    .sales-service-head h2{
+        font-size: 28px;
+    }
+    /* sales page css end */
+}
 @media(max-width: 675px) {
     /* regular head 1 css start */
     .regular-head h2{
@@ -631,7 +873,12 @@
 
     /* regular head 2 css start */
     .underline_heading h2{
-        font-size: 18px;
+        font-size: 20px;
+    }
+    .underline_heading h2 span:before{
+        width: 100%;
+        left: 0;
+        right: 0;
     }
     /* regular head 2 css end */
 
@@ -696,5 +943,75 @@
         font-size: 18px;
     }
     /* how-to page css end */
+
+    /* company page css start */
+    .company-page-layer .other-content{
+        padding: 15px;
+    }
+    .company-page-layer h4{
+        font-size: 22px;
+    }
+    .company-page-layer.pride-content .underline_heading h2:before{
+        top: 5px;
+        font-size: 18px;
+    }
+    .company-page-layer.pride-content .underline_heading h2{
+        font-size: 18px;
+    }
+    .company-page-layer p{
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .company-page-layer table{
+        font-size: 16px;
+    }
+    .company-page-layer table th,
+    .company-page-layer table td{
+        padding: 12px;
+    }
+    .company-page-layer table th:first-child,
+    .company-page-layer table td:first-child{
+        min-width: 100px;
+    }
+    /* company page css end */
+
+    /* sales page css start */
+    .sales-management-section .underline_heading h2{
+        font-size: 20px;
+    }
+    .sales-management-section .underline_heading h2 span:before{
+        height: 15px;
+    }
+    .sales-management-para{
+        max-width: 420px;
+    }
+    .sales-management-para p{
+        font-size: 16px;
+    }
+    .sales-fee-wrapper h3{
+        font-size: 26px;
+    }
+    .sales-fee-wrapper p{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .sales-fee-wrapper h5{
+        font-size: 18px;
+    }
+    .sales-rent-section .custom_col_6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .sales-rent-layer h4{
+        font-size: 20px;
+    }
+    .sales-service-content{
+        padding: 30px;
+    }
+    .sales-service-content h4{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    /* sales page css end */
 }
 /* responsive css end */
