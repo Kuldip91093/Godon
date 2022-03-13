@@ -99,7 +99,7 @@ $(document).ready(function(){
 	setTimeout(function(){
 		var triggerEl = $('.active_tab_on_load').prev('.r-tabs-accordion-title').find('.r-tabs-anchor')
 		triggerEl.trigger('click');
-		console.log(triggerEl)
+		// console.log(triggerEl)
 	},100);
 
 	$(function() {
@@ -109,4 +109,32 @@ $(document).ready(function(){
 		});
 	});
 
+});
+
+
+$(window).on('load resize', function(){
+	$('.jquery_underline_element').each(function(){
+		var curElm = $(this);
+		curElm.find('span').remove();
+		var curElmHeight = parseInt(curElm.height());
+		var curElmLineHeight = parseInt(curElm.css('line-height'));
+		var curElmLines = curElmHeight/curElmLineHeight;
+
+		i = 0;
+		while(i < curElmLines){
+			var currSpanIndex = i + 1;
+			curElm.append('<span no-of-index="' + currSpanIndex + '" style="position: absolute;top:'+ currSpanIndex * curElmLineHeight +'px;left:0;right:0;width:100%;"></span>');
+			// .css(
+			// 	{
+			// 		"position":"absolute",
+			// 		"top":curElemIndex * curElmLineHeight + "px",
+			// 		"left":"0",
+			// 		"right":"0",
+			// 		"width":"100%"
+			// 	}
+			// );
+
+			i++;
+		}
+	});
 });

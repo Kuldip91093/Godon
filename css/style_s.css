@@ -442,6 +442,8 @@
 .company-page-layer.pride-content .underline_heading h2:before{
     content: '一、';
     font-size: 22px;
+    font-family: 'Yu Mincho';
+    font-weight: 600;
     color: #070069;
     position: absolute;
     top: 12px;
