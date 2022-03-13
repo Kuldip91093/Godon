@@ -58,29 +58,6 @@ $(document).ready(function(){
 	// });
 });
 
-
-// CUSTOM TABS
-// $(document).ready(function(){
-// 	// On Page Load Active Tab
-// 	var currActiveTab = $('.custom_tabs .custom_tabs_nav a.tab_nav_active').attr('data-tag');
-// 	console.log(currActiveTab);
-// 	$('.custom_tabs .tabs_content_item').hide();
-// 	$('.custom_tabs .tabs_content_item.' + currActiveTab).fadeIn();
-// 	$('.custom_tabs .tabs_content_item.' + currActiveTab).addClass('tab_content_active');
-
-// 	// On Click Change Tab
-// 	$('.custom_tabs .custom_tabs_nav a').click(function(){
-// 		$(this).parents('.custom_tabs').find('.custom_tabs_nav a').removeClass('tab_nav_active');
-// 		$(this).addClass('tab_nav_active');
-
-// 		var currActiveTab = $(this).attr('data-tag');
-// 		$(this).parents('.custom_tabs').find('.tabs_content_item').hide();
-// 		$(this).parents('.custom_tabs').find('.tabs_content_item').removeClass('tab_content_active');
-// 		$(this).parents('.custom_tabs').find('.tabs_content_item.' + currActiveTab).fadeIn();
-// 		$(this).parents('.custom_tabs').find('.tabs_content_item.' + currActiveTab).addClass('tab_content_active');
-// 	});
-// });
-
 // Responsive Tabs
 $(document).ready(function(){
 
@@ -109,32 +86,4 @@ $(document).ready(function(){
 		});
 	});
 
-});
-
-
-$(window).on('load resize', function(){
-	$('.jquery_underline_element').each(function(){
-		var curElm = $(this);
-		curElm.find('span').remove();
-		var curElmHeight = parseInt(curElm.height());
-		var curElmLineHeight = parseInt(curElm.css('line-height'));
-		var curElmLines = curElmHeight/curElmLineHeight;
-
-		i = 0;
-		while(i < curElmLines){
-			var currSpanIndex = i + 1;
-			curElm.append('<span no-of-index="' + currSpanIndex + '" style="position: absolute;top:'+ currSpanIndex * curElmLineHeight +'px;left:0;right:0;width:100%;"></span>');
-			// .css(
-			// 	{
-			// 		"position":"absolute",
-			// 		"top":curElemIndex * curElmLineHeight + "px",
-			// 		"left":"0",
-			// 		"right":"0",
-			// 		"width":"100%"
-			// 	}
-			// );
-
-			i++;
-		}
-	});
 });

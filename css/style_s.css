@@ -450,6 +450,10 @@
     left: 10px;
     line-height: 1;
 }
+.company-page-layer.pride-content .underline_heading h2 span:before{
+    left: -40px;
+    width: calc(100% + 50px);
+}
 .company-page-layer p{
     color: #000;
     font-size: 20px;
@@ -796,6 +800,10 @@
     .company-page-layer.pride-content .underline_heading h2:before{
         top: 7px;
         font-size: 20px;
+    }
+    .company-page-layer.pride-content .underline_heading h2 span:before{
+        left: -30px;
+        width: calc(100% + 32px);
     }
     /* company page css end */
 
