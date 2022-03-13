@@ -349,6 +349,9 @@ img{
     overflow-x: hidden;
     padding-top: 100px;
 }
+main.main.top_page_header {
+    padding-top: 0;
+}
 /*main css end*/
 
 /*header css start*/
@@ -361,6 +364,19 @@ img{
     background-color: #d9b341;
     padding: 14px 0;
     z-index: 9999;
+    transition: all 0.4s;
+}
+.site_header.top_page_header {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.site_header.header_fixed {
+    position: fixed;
+    top: 0;
+    bottom: auto;
 }
 .site_header .custom_container {
     display: -ms-flexbox;
@@ -522,6 +538,1052 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 }
 /*footer css end*/
 
+/*banner section css start*/
+.banner_section {
+    background-image: url('../images/banner_image.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+}
+.banner_section .custom_container {
+    width: 100%;
+    max-width: 1068px;
+    padding: 0 15px;
+    margin: auto;
+}
+.banner_section h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 68px;
+    margin-bottom: 30px;
+    text-shadow: 15px 15px 20px rgb(0, 0, 0, 0.9);
+    font-weight: 600;
+}
+.banner_section p {
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 45px;
+    text-shadow: 15px 15px 20px rgb(0, 0, 0, 0.9);
+    font-weight: 600;
+}
+/*banner section css end*/
+
+/*news section css start*/
+.news_section {
+    padding: 100px 0;
+}
+.line_heading {
+    position: relative;
+    display: table;
+    margin: 0 auto 20px;
+}
+.line_heading:before,
+.line_heading:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 200px;
+    height: 5px;
+}
+.line_heading:before{
+    right: 100%;
+    margin-right: 30px;
+    background: linear-gradient(270deg, #d9b341, #070069);
+}
+.line_heading:after{
+    left: 100%;
+    margin-left: 30px;
+    background: linear-gradient(90deg, #d9b341, #070069);
+}
+.line_heading h3 {
+    text-align: center;
+    font-size: 35px;
+    color: #060d62;
+    line-height: 40px;
+    display: table;
+    margin: auto;
+    font-weight: 600;
+}
+.line_heading p {
+    text-align: center;
+    font-size: 25px;
+    color: #000000;
+    line-height: 32px;
+    display: table;
+    margin: auto;
+    font-weight: 400;
+}
+.news_section .news_content {
+    padding: 48px 0;
+    background-image: url(../images/news_bg_image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 4px solid #d9b341;
+}
+.news_section .news_content .news_content_inner {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    background-color: #ccdaeb;
+    padding: 25px 15px;
+}
+.news_section .news_content .news_content_inner .news_content_text {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+} 
+.news_section .news_content .news_table {
+    display: table;
+    width: auto;
+}
+.news_section .news_content .news_table_row {
+    display: table-row;
+}
+.news_section .news_content .news_table_th, 
+.news_section .news_content .news_table_td {
+    display: table-cell;
+}
+.news_section .news_content .news_table p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #000;
+}
+.news_section .news_content .news_table_th p {
+    padding-right: 20px;
+}
+.news_section .news_content .news_content_inner .news_content_text a {
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    text-align: center;
+    display: table;
+    line-height: 50px;
+    background-color: #d9b341;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.4s;
+    border: 1px solid #d9b341;
+    font-weight: 600;
+}
+.news_section .news_content .news_content_inner .news_content_text a:hover {
+    color: #d9b341;
+    background-color: #fff;
+}
+.news_section .news_content .news_content_inner .news_content_text a span {
+    color: #060d62;
+    margin-right: 10px;
+}
+/*news section css end*/
+
+/*business section css start*/
+.busniess_section {
+    overflow: hidden;
+}
+.busniess_section .custom_container {
+    width: 100%;
+    max-width: 1130px;
+    margin: auto;
+    padding: 0 15px;
+}
+.busniess_box .busniess_box_content {
+    border: 4px solid #d9b341;
+    padding: 45px;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+.busniess_box.busniess_real_estate_box .busniess_box_content {
+    margin-bottom: 100px;
+}
+.busniess_box .busniess_box_content:before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: -50px;
+    bottom: -50px;
+    background-color: #060d62;
+    z-index: -1;
+}
+.busniess_box.busniess_management_box .busniess_box_content:before {
+    top: 50px;
+    left: -50px;
+    right: 50px;
+    bottom: -50px;
+}
+.busniess_box .custom_row {
+    align-items: center;
+    margin: 0;
+}
+.busniess_box .custom_col_image {
+    flex: 0 0 534px;
+    max-width: 534px;
+}
+.busniess_box .custom_col_text {
+    flex: 0 0 calc(100% - 534px);
+    max-width: calc(100% - 534px);
+}
+.busniess_image_box {
+    position: relative;
+    padding-top: 65%;
+    overflow: hidden;
+}
+.busniess_image_box .busniess_image_inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center right;
+}
+.busniess_image_box img.busniess_image_inner_second {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    min-width: 100%;
+        object-fit: contain;
+    object-position: right;
+}
+.busniess_management_box .busniess_image_box .busniess_image_inner {
+    object-position: center left;
+}
+.busniess_management_box .busniess_image_box .busniess_image_inner_second{
+    left: 0;
+    right: auto;
+    object-position: left;
+}
+.busniess_box h3 {
+    text-align: center;
+    color: #060d62;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.busniess_box p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000;
+    font-weight: 600;
+}
+.busniess_box a {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px auto 0;
+    display: block;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #070069;
+    font-size: 18px;
+    color: #000;
+    transition: all 0.4s;
+}
+.busniess_box a:hover {
+    background-color: #070069;
+    color: #fff;
+}
+.busniess_box a span {
+    color: #d9b341;
+    margin-right: 12px;
+}
+/*business section css end*/
+
+/*trading section css start*/
+.trading_section {
+    padding: 100px 0;
+}
+.trading_section .custom_container {
+    max-width: 1130px;
+}
+.trading_content {
+    padding: 46px 0 32px;
+    background-image: url(../images/news_bg_image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 4px solid #d9b341;
+}
+.trading_content .custom_col_4 {
+    display: flex;
+    margin-bottom: 30px;
+}
+.trading_content .trading_box {
+    width: 100%;
+    border: 4px solid #d9b341;
+    background-color: #fff;
+    overflow: hidden;
+}
+.trading_content .trading_box .trading_image {
+    position: relative;
+    padding-top: 110.8%;
+    overflow: hidden;
+    margin: 10px 18px;
+}
+.trading_content .trading_box .trading_image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.trading_content .trading_box .trading_text {
+    min-height: 44px;
+    background-color: #d9b341;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 0px;
+}
+.trading_content .trading_box .trading_text p {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    font-weight: 500;
+}
+.trading_content a {
+    display: block;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    height: 50px;
+    border: 1px solid #fff;
+    line-height: 50px;
+    background-color: #d9b341;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.4s;
+}
+.trading_content a:hover {
+    background-color: #fff;
+}
+.trading_content a span {
+    color: #060d62;
+}
+/*trading section css end*/
+
+/*contact section css start*/
+.contact_section .howto-contact-content .content-bx {
+    background-color: #fff;
+}
+.contact_section .howto-contact-content {
+    padding-bottom: 37px;
+}
+/*contact section css end*/
+
+/* regular banner css start */
+.regular-banner{
+    position: relative;
+    width: 100%;
+}
+.regular-banner-img{
+    width: 100%;
+}
+/* regular banner css end */
+
+/* regular head 1 css start */
+.regular-head{
+    width: 100%;
+    text-align: center;
+}
+.regular-head.margin-top-minus{
+    transform: translate(0, -30px);
+    padding-bottom: 80px;
+}
+.regular-head-wrapper{
+    position: relative;
+    display: inline-block;
+}
+.regular-head-wrapper:before,
+.regular-head-wrapper:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 200px;
+    height: 5px;
+}
+.regular-head-wrapper:before{
+    right: 100%;
+    margin-right: 30px;
+    background: linear-gradient(270deg, #d9b341, #070069);
+}
+.regular-head-wrapper:after{
+    left: 100%;
+    margin-left: 30px;
+    background: linear-gradient(90deg, #d9b341, #070069);
+}
+.regular-head h2{
+    position: relative;
+    z-index: 1;
+    color: #070069;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1;
+}
+/* regular head 1 css end */
+
+/* regular head 2 css start */
+.underline_heading{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.underline_heading .custom_container{
+    position: relative;
+}
+.underline_heading h2 span{
+    position: relative;
+    display: inline-block;
+}
+.underline_heading h2 span:before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    right: -10px;
+    width: calc(100% + 20px);
+    height: 22px;
+    background: #e8d18d;
+    z-index: -1;
+}
+.underline_heading h2{
+    position: relative;
+    z-index: 1;
+    color: #070069;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+/* regular head 2 css end */
+
+/* how-to page css start */
+.purchase-sale-topbar-bttns{
+    margin-bottom: 130px;
+}
+.purchase-sale-topbar-bttns .col-inner{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.purchase-sale-topbar-bttns .bttn{
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 26px 8px;
+    background: #d9b341;
+    color: #070069;
+    transition: all 0.4s;
+}
+.purchase-sale-topbar-bttns .bttn.bttn-yellow{
+    background: #d9b341;
+    color: #070069;
+}
+.purchase-sale-topbar-bttns .bttn.bttn-yellow:hover{
+    background: #070069;
+    color: #d9b341;
+}
+.purchase-sale-topbar-bttns .bttn.bttn-blue{
+    background: #070069;
+    color: #d9b341;
+}
+.purchase-sale-topbar-bttns .bttn.bttn-blue:hover{
+    background: #d9b341;
+    color: #070069;
+}
+.purchase-sale-topbar-bttns .bttn span{
+    font-size: 30px;
+}
+
+.purchase-sale-realstate{
+    width: 100%;
+}
+.realstate-layer{
+    margin-bottom: 150px;
+}
+.yellow_title_bg{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #d9b341;
+    background: #fff7e1;
+    padding: 6px;
+}
+.blue_inner_border{
+    width: 100%;
+    position: relative;
+}
+.blue_title_bg{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #070069;
+    background: #fff7e1;
+    padding: 6px;
+}
+.yellow_inner_border{
+    width: 100%;
+    position: relative;
+}
+.blue_inner_border:after, .yellow_inner_border:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 3px;
+    border-style: solid;
+    user-select: none;
+    pointer-events: none;
+}
+.blue_inner_border:after{
+    border-color: #070069;
+}
+.yellow_inner_border:after{
+    border-color: #d9b341;
+}
+.heading_with_bg{
+    width: 100%;
+    position: relative;
+    padding: 15px 0 15px 120px;
+}
+.heading_with_bg:before{
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    right: -9px;
+    height: calc(100% + 10px);
+}
+.yellow_title_bg .heading_with_bg:before{
+    background: #d9b341;
+}
+.blue_title_bg .heading_with_bg:before{
+    background: #070069;
+}
+
+.heading_with_bg:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    width: 100px;
+    height: 10px;
+    margin: auto;
+}
+.yellow_title_bg .heading_with_bg:after{
+    background: #070069;
+}
+.blue_title_bg .heading_with_bg:after{
+    background: #d9b341;
+}
+
+.heading_with_bg h3{
+    position: relative;
+    z-index: 1;
+    font-size: 35px;
+    font-weight: 600;
+}
+.yellow_title_bg .heading_with_bg h3{
+    color: #070069;
+}
+.blue_title_bg .heading_with_bg h3{
+    color: #d9b341;
+}
+.purchase-sale-realstate .other-cont{
+    width: 100%;
+    padding: 36px 46px;
+}
+.purchase-sale-realstate .para{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.purchase-sale-realstate .para p{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.purchase-sale-realstate .custom_tabs_nav{
+    display: flex;
+}
+.purchase-sale-realstate .custom_tabs_nav li{
+    flex: 1 0 0;
+}
+.purchase-sale-realstate a.r-tabs-anchor{
+    display: block;
+    border: 3px solid #765800;
+    border-radius: 10px 10px 0 0;
+    color: #070069;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1;
+    background: #d9b341;
+    text-transform: uppercase;
+    padding: 7px;
+    text-align: center;
+}
+.purchase-sale-realstate .r-tabs-accordion-title:not(:first-child){
+    margin-top: 10px;
+}
+.purchase-sale-realstate .r-tabs-accordion-title a.r-tabs-anchor{
+    border-radius: 10px;
+}
+.purchase-sale-realstate #SaleRealEstate a.r-tabs-anchor{
+    color: #d9b341;
+    border-color: #626262;
+    background: #070069;
+}
+.purchase-sale-realstate .r-tabs-state-active a.r-tabs-anchor {
+    background: #FFF;
+    border-bottom-color: #FFF;
+    border-radius: 10px 10px 0 0;
+}
+.purchase-sale-realstate #SaleRealEstate .r-tabs-state-active a.r-tabs-anchor{
+    background: #FFF;
+    border-bottom-color: #FFF;
+}
+.purchase-sale-realstate .tabs_content_item{
+    position: relative;
+    border: 3px solid #765800;
+    border-top: none;
+    background: #FFF;
+    border-radius: 0 0 10px 10px;
+    padding: 50px 30px 30px;
+}
+.purchase-sale-realstate .tabs_content_item:before, .purchase-sale-realstate .tabs_content_item:after {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: -5px;
+    height: 10px;
+    width: 3px;
+    background-color: #765800;
+}
+.purchase-sale-realstate .tabs_content_item:after {
+    left: auto;
+    right: -3px;
+}
+.purchase-sale-realstate #SaleRealEstate .tabs_content_item:before, .purchase-sale-realstate #SaleRealEstate .tabs_content_item:after {
+    background-color: #626262;
+}
+.purchase-sale-realstate #SaleRealEstate .tabs_content_item{
+    border-color: #626262;
+}
+.purchase-sale-realstate .tabs_content_item .flex-bx{
+    display: flex;
+    flex-wrap: wrap;
+}
+.purchase-sale-realstate .tabs_content_item .img-bx{
+    width: 40%;
+    background: #d9b341;
+}
+.purchase-sale-realstate #SaleRealEstate .tabs_content_item .img-bx{
+    background: #070069;
+}
+.purchase-sale-realstate .tabs_content_item .cont-bx{
+    width: 60%;
+    padding: 30px 0 30px 30px;
+}
+.purchase-sale-realstate .tabs_content_item .cont-bx h4{
+    color: #070069;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.purchase-sale-realstate .tabs_content_item .cont-bx p{
+    color: #000001;
+    font-size: 16px;
+    font-weight: 600;
+}
+.howto-contact-content{
+    width: 100%;
+    padding: 30px 0;
+}
+
+.howto-contact-section{
+    width: 100%;
+    padding-bottom: 80px;
+}
+.howto-contact-content .content-bx {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    background: #e5e5e5;
+    border-radius: 10px;
+    padding: 18px 35px;
+    min-height: 200px;
+    margin-bottom: 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.howto-contact-content .head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.howto-contact-content .head .icon{
+    margin-right: 30px;
+}
+.howto-contact-content .head h4{
+    color: #060d62;
+    font-size: 28px;
+    font-weight: 600;
+}
+.howto-contact-content .content-number{
+    text-align: center;
+}
+.howto-contact-content .content-number a{
+    display: inline-block;
+    color: #d9b341;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 0 #FFF;
+    transition: all 0.4s;
+}
+.howto-contact-content .content-number a:hover,
+.howto-contact-content .content-number a:focus{
+    color: #070069;
+}
+.howto-contact-content .content-mail{
+    display: block;
+    border: 3px solid #d9b341;
+    background: #FFF;
+    text-align: center;
+    padding: 12px;
+    margin: 38px auto 0;
+    transition: all 0.4s;
+}
+.howto-contact-content .content-mail:hover,
+.howto-contact-content .content-mail:focus{
+    background-color: #d9b341;
+}
+.howto-contact-content .content-mail p{
+    color: #070069;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+}
+/* how-to page css end */
+
+/* company page css start */
+.company-page-section{
+    width: 100%;
+}
+.company-page-layer{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.company-page-layer .blue_title_bg{
+    background: url('../images/company-layer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.company-page-layer .heading_with_bg h3{
+    color: #FFF;
+}
+.company-page-layer .other-content{
+    padding: 40px 30px;
+}
+.company-page-layer h4{
+    color: #000;
+    font-size: 35px;
+    font-weight: 600;
+    text-shadow: 8px 8px 8px rgba(56, 56, 56, 0.9);
+    text-align: center;
+}
+.company-page-layer h4 span{
+    color: #0000ff;
+}
+.company-page-layer.pride-content .underline_heading h2{
+    text-align: left;
+    padding: 0 30px 0 50px;
+    font-weight: 600;
+}
+.company-page-layer.pride-content .underline_heading h2:before{
+    content: '一、';
+    font-size: 22px;
+    font-family: 'Yu Mincho';
+    font-weight: 600;
+    color: #070069;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    line-height: 1;
+}
+.company-page-layer.pride-content .underline_heading h2 span:before{
+    left: -40px;
+    width: calc(100% + 50px);
+}
+.company-page-layer p{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+.company-page-layer .table-wrapper{
+    width: 100%;
+    overflow-x: auto;
+}
+.company-page-layer table{
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+.company-page-layer table th,
+.company-page-layer table td{
+    border: 1px solid #d9b341;
+    padding: 10px 50px;
+}
+.company-page-layer table tr:first-child th,
+.company-page-layer table tr:first-child td{
+    border-top: 0;
+}
+.company-page-layer table th:first-child,
+.company-page-layer table td:first-child{
+    text-align: center;
+}
+/* company page css end */
+
+/* sales page css start */
+.sales-management-section .underline_heading h2{
+    color: #000000;
+    font-size: 42px;
+}
+.sales-management-section .underline_heading h2 span:before{
+    height: 40px;
+}
+.sales-management-para{
+    padding: 20px 0 50px;
+    width: 100%;
+    max-width: 845px;
+    margin: auto;
+}
+.sales-management-para p{
+    color: #060d62;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.sales-management-para p:last-child{
+    margin-bottom: 0;
+}
+.sales-fee-section{
+    width: 100%;
+    background: linear-gradient(90deg, #d9b341, #e4d199);
+    padding: 10px 0;
+}
+.sales-fee-wrapper{
+    width: 100%;
+    background: #060d62;
+    color: #FFF;
+    padding: 50px 0;
+    text-align: center;
+}
+.sales-fee-wrapper h3{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.sales-fee-wrapper p{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+.sales-fee-wrapper h5{
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 0 0 25px rgba(255, 0, 0, 0.75), 0 0 25px rgba(255, 0, 0, 0.75), 0 0 25px rgba(255, 0, 0, 0.75), 0 0 25px rgba(255, 0, 0, 0.75);
+}
+.sales-rent-section{
+    width: 100%;
+    padding: 85px 0 20px;
+    background: #e5e5e5;
+}
+.sales-rent-section .custom_col_6{
+    margin-bottom: 85px;
+}
+.sales-rent-layer{
+    width: 100%;
+    max-width: 445px;
+    margin: auto;
+    background: #FFF;
+    border: 5px solid #d9b341;
+    padding: 45px 45px 40px;
+    box-shadow: 20px 20px #626262;
+    height: 100%;
+    text-align: center;
+}
+.sales-rent-layer h4{
+    color: #060d62;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 45px;
+}
+.sales-rent-layer p{
+    color: #060d62;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+.sales-service-section{
+    width: 100%;
+    padding: 100px 0 0;
+}
+.sales-service-head{
+    margin-bottom: 50px;
+}
+.sales-service-head h2{
+    color: #060d62;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+.sales-service-layer{
+    width: 100%;
+    background: #eed06e;
+    color: #FFF;
+    margin-bottom: 70px;
+    padding: 26px 0;
+}
+.sales-service-layer .custom_row{
+    margin: 0;
+    width: 100%;
+    align-items: center;
+}
+.sales-service-layer .custom_col_6{
+    padding: 0;
+}
+.sales-service-img img{
+    width: 100%;
+}
+.sales-service-content{
+    padding: 0 45px;
+}
+.sales-service-content h4{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+.sales-service-content p{
+    color: #060d62;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* sales page css end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*faq section css start*/
 .faq_section {
     padding-bottom: 120px;
@@ -623,12 +1685,135 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 
 /*responsive css start*/
 @media(max-width: 1166px) {
-    /*main css start*/
     .main{
         padding-top: 84px;
     }
-    /*main css end*/
-    /*header & footer css start*/
+    .custom_col_4 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .trading_section .custom_container,
+    .busniess_section .custom_container,
+    .banner_section .custom_container {
+        max-width: 900px;
+    }
+    .banner_section {
+        padding-bottom: 80px;
+    }
+    .banner_section h1 {
+        font-size: 48px;
+        line-height: 55px;
+        margin-bottom: 20px;
+    }
+    .banner_section p {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .trading_section,
+    .news_section {
+        padding: 60px 0;
+    }
+    .news_section .news_content {
+        padding: 30px 15px;
+    }
+    .news_section .news_content .news_content_inner {
+        max-width: 800px;
+        padding: 20px 15px;
+    }
+    .news_section .news_content .news_content_inner .news_content_text {
+        max-width: 720px;
+        padding: 10px 20px;
+    }
+    .news_section .news_content .news_table p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .news_section .news_content .news_table_th p {
+        padding-right: 15px;
+    }
+    .news_section .news_content .news_content_inner .news_content_text a {
+        max-width: 180px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+    }
+    .busniess_box .busniess_box_content {
+        padding: 30px;
+    }
+    .busniess_box .custom_col_image{
+        flex: 0 0 386px;
+        max-width: 386px;
+    }
+    .busniess_box .custom_col_text {
+        flex: 0 0 calc(100% - 386px);
+        max-width: calc(100% - 386px);
+    }
+    .busniess_box .custom_col_text .busniess_image_text {
+        padding-top: 20px;
+    }
+    .busniess_box h3 {
+        font-size: 24px;
+        margin-bottom: 5px;
+        line-height: 38px;
+    }
+    .busniess_box p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .busniess_box a {
+        max-width: 220px;
+        margin: 10px auto 0;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .trading_content {
+        padding: 30px 0;
+    }
+    .regular-head h2{
+        font-size: 32px;
+    }
+    .underline_heading h2{
+        font-size: 24px;
+    }
+    .underline_heading h2 span:before{
+        height: 15px;
+    }
+    .howto-contact-content .head{
+        justify-content: center;
+    }
+    .howto-contact-content .head h4{
+        font-size: 24px;
+    }
+    .howto-contact-content .content-mail{
+        max-width: 260px;
+    }
+    .company-page-layer.pride-content .underline_heading h2{
+        padding: 0 0 0 40px;
+    }
+    .company-page-layer.pride-content .underline_heading h2:before{
+        top: 9px;
+        left: 0;
+    }
+    .company-page-layer p{
+        padding: 0;
+    }
+    .sales-management-section .underline_heading h2{
+        font-size: 30px;
+    }
+    .sales-management-section .underline_heading h2 span:before{
+        height: 20px;
+    }
+    .sales-management-para{
+        max-width: 700px;
+    }
+    .sales-management-para p{
+        font-size: 20px;
+    }
+    .sales-service-head h2{
+        font-size: 36px;
+    }
     .site_footer .custom_container,
     .site_header .custom_container {
         max-width: 900px;
@@ -644,15 +1829,37 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
         font-size: 18px;
         line-height: 30px;
     }
-    /*header & footer css end*/
-    /*faq section css start*/
     .faq_section {
         padding-bottom: 70px;
     }
-    /*faq section css start*/
 }
 @media(max-width: 1024px) {
-    /*faq section css start*/
+    .busniess_box .custom_col_text,
+    .busniess_box .custom_col_image {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .busniess_box .busniess_box_content:before {
+        top: 20px;
+        left: 20px;
+        right: -20px;
+        bottom: -20px;
+    }
+    .busniess_box.busniess_management_box .busniess_box_content:before {
+        top: 20px;
+        left: -20px;
+        right: 20px;
+        bottom: -20px;
+    }
+    .busniess_box .busniess_box_content {
+        margin-bottom: 16px;
+    }
+    .busniess_box.busniess_real_estate_box .busniess_box_content {
+        margin-bottom: 40px;
+    }
+    .busniess_image_box img.busniess_image_inner_second {
+        display: none;
+    }
     .faq_content h4 {
         font-size: 20px !important;
     }
@@ -665,10 +1872,13 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     .answer_content p {
         padding: 0px 0px 0px 30px !important;
     }
-    /*faq section css end*/
 }
 @media(max-width: 900px) {
-    /*header css start*/
+    header.site_header.top_page_header {
+        position: fixed;
+        top: 0;
+        bottom: auto;
+    }
     nav.custom_navbar {
         position: fixed;
         top: 0;
@@ -721,8 +1931,232 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     .site_footer .footer_text img {
         margin: 0 auto 10px;
     }
-    /*footer css end*/
-    /*faq section css start*/
+    .banner_section {
+        padding-bottom: 0 !important;
+        padding-top: 84px;
+    }
+    .banner_section h1 {
+        font-size: 38px;
+        line-height: 43px;
+        margin-bottom: 16px;
+    }
+    .banner_section p {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .line_heading h3 {
+        font-size: 26px;
+        line-height: 29px;
+    }
+    .line_heading p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .line_heading:before, .line_heading:after{
+        width: 120px;
+        height: 3px;
+    }
+    .line_heading:before{
+        margin-right: 15px;
+    }
+    .line_heading:after{
+        margin-left: 15px;
+    }
+    .news_section .news_content {
+        padding: 20px 15px;
+    }
+    .news_section .news_content .news_content_inner .news_content_text,
+    .news_section .news_content .news_content_inner {
+        padding: 15px;
+    }
+    .busniess_box .busniess_box_content {
+        padding: 15px;
+    }
+    .busniess_box .busniess_box_content:before {
+        top: 19px;
+        left: 19px;
+        right: -19px;
+        bottom: -19px;
+    }
+    .busniess_box.busniess_management_box .busniess_box_content:before {
+        top: 19px;
+        left: -19px;
+        right: 19px;
+        bottom: -19px;
+    }
+    .busniess_box.busniess_real_estate_box .busniess_box_content {
+        margin-bottom: 40px;
+    }
+    .busniess_box.busniess_real_estate_box {
+        margin-bottom: 20px;
+    }
+    .regular-head.margin-top-minus{
+        padding-bottom: 0;
+    }
+    .regular-head-wrapper:before, .regular-head-wrapper:after{
+        width: 120px;
+        height: 3px;
+    }
+    .regular-head-wrapper:before{
+        margin-right: 15px;
+    }
+    .regular-head-wrapper:after{
+        margin-left: 15px;
+    }
+    .regular-head h2{
+        font-size: 24px;
+    }
+    .underline_heading h2{
+        font-size: 20px;
+    }
+    .howto-contact-section{
+        padding-bottom: 40px;
+    }
+    .realstate-layer{
+        margin-bottom: 80px;
+    }
+    .yellow_title_bg, .blue_title_bg{
+        border-width: 1px;
+    }
+    .blue_inner_border:after, .yellow_inner_border:after{
+        border-width: 1px;
+    }
+    .heading_with_bg:before{
+        top: -6px;
+        left: -6px;
+        right: -6px;
+    }
+    .heading_with_bg{
+        padding-left: 80px;
+    }
+    .heading_with_bg:after{
+        width: 60px;
+        height: 5px;
+        left: -7px;
+    }
+    .heading_with_bg h3{
+        font-size: 24px;
+    }
+    .purchase-sale-realstate .other-cont{
+        padding: 20px 30px;
+    }
+    .purchase-sale-realstate .para{
+        margin-bottom: 30px;
+    }
+    .purchase-sale-realstate .para p{
+        font-size: 18px;
+    }
+    .purchase-sale-realstate .custom_tabs_nav a,
+    .purchase-sale-realstate a.r-tabs-anchor{
+        font-size: 20px;
+        border-width: 2px;
+    }
+    .purchase-sale-realstate .tabs_content_item{
+        padding: 30px 15px 15px;
+        border-width: 2px;
+    }
+    .purchase-sale-realstate .tabs_content_item:before,
+    .purchase-sale-realstate .tabs_content_item:after {
+        width: 2px;
+    }
+    .purchase-sale-realstate .tabs_content_item:before {
+        left: -2px;
+    }
+    .purchase-sale-realstate .tabs_content_item:after {
+        right: -2px;
+    }
+    .purchase-sale-realstate .tabs_content_item .cont-bx{
+        padding: 15px 0 15px 15px;
+    }
+    .purchase-sale-realstate .tabs_content_item .cont-bx h4{
+        font-size: 20px;
+    }
+    .howto-contact-content .content-bx{
+        padding: 30px 20px;
+        min-height: 185px;
+    }
+    .howto-contact-content .head .icon{
+        margin-right: 15px;
+        max-width: 40px;
+    }
+    .howto-contact-content .head h4{
+        font-size: 20px;
+    }
+    .howto-contact-content .content-number a{
+        font-size: 32px;
+    }
+    .howto-contact-content .content-mail{
+        margin-top: 25px;
+        border-width: 2px;
+    }
+    .howto-contact-content .content-mail p{
+        font-size: 16px;
+    }
+    .company-page-section{
+        padding-top: 50px;
+    }
+    .company-page-layer.pride-content .underline_heading h2{
+        padding: 0 0 0 30px;
+    }
+    .company-page-layer.pride-content .underline_heading h2:before{
+        top: 7px;
+        font-size: 20px;
+    }
+    .company-page-layer.pride-content .underline_heading h2 span:before{
+        left: -30px;
+        width: calc(100% + 32px);
+    }
+    .sales-fee-wrapper h3{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .sales-fee-wrapper p{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .sales-fee-wrapper h5{
+        font-size: 30px;
+    }
+    .sales-rent-section{
+        padding: 50px 0 30px;
+    }
+    .sales-rent-section .custom_col_6{
+        margin-bottom: 30px;
+    }
+    .sales-rent-layer{
+        padding: 30px;
+        border-width: 3px;
+        box-shadow: 10px 10px #626262;
+    }
+    .sales-rent-layer h4{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .sales-rent-layer p{
+        font-size: 16px;
+    }
+    .sales-service-layer{
+        padding: 0;
+    }
+    .sales-service-layer .custom_col_6{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .sales-service-content{
+        padding: 40px;
+    }
+    .sales-service-section{
+        padding: 50px 0 0;
+    }
+    .sales-service-layer{
+        margin-bottom: 50px;
+    }
+    .sales-service-head{
+        margin-bottom: 30px;
+    }
+    .sales-service-head h2{
+        font-size: 28px;
+    }
     .faq_section {
         padding-bottom: 40px;
     }
@@ -732,28 +2166,209 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     .faq_content .answer_content + h4 {
         margin-top: 25px !important;
     }
-    /*faq section css start*/
 }
-@media (max-width: 675px){
-    /*main css start*/
+@media(max-width: 675px) {
     .main{
         padding-top: 60px;
     }
-    /*main css end*/
-    /*header css start*/
+    .custom_col_4 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
     .site_header {
         padding: 10px 0;
     }
     .site_header a.header_logo img {
         max-width: 200px;
     }
-    /*header css end*/
-    /*footer css start*/
     .footer_conpyright p {
         padding: 15px;
     }
-    /*footer css end*/
-    /*faq section css start*/
+    .trading_section, .news_section {
+        padding: 40px 0;
+    }
+    .banner_section {
+        padding-top: 60px;
+        background-position: -570px center;
+    }
+    .banner_section h1 {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+    .banner_section p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .news_section .news_content .news_content_inner .news_content_text {
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .news_section .news_content .news_table p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .news_section .news_content .news_content_inner .news_content_text a {
+        margin-top: 10px;
+    }
+    .line_heading {
+        margin: 0 auto 40px;
+    }
+
+    .line_heading:before,
+    .line_heading:after{
+        width: 40%;
+        top: auto;
+        bottom: -15px;
+        margin: 0;
+    }
+    .line_heading:before{
+        right: 50%;
+    }
+    .line_heading:after{
+        left: 50%;
+    }
+    .trading_content a {
+        max-width: 250px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .contact_section .howto-contact-content {
+        padding: 0;
+    }
+    .underline_heading h2{
+        font-size: 20px;
+    }
+    .underline_heading h2 span:before{
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    .purchase-sale-topbar-bttns{
+        margin-bottom: 50px;
+    }
+    .purchase-sale-topbar-bttns .columnn{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .purchase-sale-topbar-bttns .bttn{
+        padding: 15px 8px;
+    }
+    .purchase-sale-topbar-bttns .bttn span{
+        font-size: 24px;
+    }
+    .realstate-layer{
+        margin-bottom: 50px;
+    }
+    .heading_with_bg{
+        padding-left: 50px;
+    }
+    .heading_with_bg:after{
+        height: 3px;
+        width: 30px;
+    }
+    .heading_with_bg h3{
+        font-size: 20px;
+    }
+    .purchase-sale-realstate .other-cont{
+        padding: 20px 15px;
+    }
+    .purchase-sale-realstate .para p{
+        font-size: 16px;
+    }
+    .purchase-sale-realstate .custom_tabs_nav a, .purchase-sale-realstate a.r-tabs-anchor{
+        font-size: 18px;
+    }
+    .purchase-sale-realstate .tabs_content_item{
+        padding: 10px;
+    }
+    .purchase-sale-realstate .tabs_content_item .img-bx{
+        width: 100%;
+        min-height: 150px;
+        margin-bottom: 15px;
+    }
+    .purchase-sale-realstate .tabs_content_item .cont-bx{
+        width: 100%;
+        padding: 0;
+    }
+    .purchase-sale-realstate .tabs_content_item .cont-bx h4{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .howto-contact-content .columnn{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .howto-contact-content .head h4{
+        font-size: 18px;
+    }
+    .company-page-layer .other-content{
+        padding: 15px;
+    }
+    .company-page-layer h4{
+        font-size: 22px;
+    }
+    .company-page-layer.pride-content .underline_heading h2:before{
+        top: 5px;
+        font-size: 18px;
+    }
+    .company-page-layer.pride-content .underline_heading h2{
+        font-size: 18px;
+    }
+    .company-page-layer p{
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .company-page-layer table{
+        font-size: 16px;
+    }
+    .company-page-layer table th,
+    .company-page-layer table td{
+        padding: 12px;
+    }
+    .company-page-layer table th:first-child,
+    .company-page-layer table td:first-child{
+        min-width: 100px;
+    }
+    .sales-management-section .underline_heading h2{
+        font-size: 20px;
+    }
+    .sales-management-section .underline_heading h2 span:before{
+        height: 15px;
+    }
+    .sales-management-para{
+        max-width: 420px;
+    }
+    .sales-management-para p{
+        font-size: 16px;
+    }
+    .sales-fee-wrapper h3{
+        font-size: 26px;
+    }
+    .sales-fee-wrapper p{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .sales-fee-wrapper h5{
+        font-size: 18px;
+    }
+    .sales-rent-section .custom_col_6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .sales-rent-layer h4{
+        font-size: 20px;
+    }
+    .sales-service-content{
+        padding: 30px;
+    }
+    .sales-service-content h4{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
     .faq_content {
         padding: 15px;
     }
@@ -782,6 +2397,5 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     .faq_content h4 span.ui-accordion-header-icon {
         right: 10px;
     }
-    /*faq section css end*/
 }
 /*responsive css end*/
