@@ -2,6 +2,9 @@
     flex-direction: row-reverse;
 }
 /* header section css end */
+.site_header {
+    transition: all 0.4s;
+}
 main.main.top_page_header {
     padding-top: 0;
 }
@@ -11,6 +14,11 @@ header.site_header.top_page_header {
     left: 0;
     right: 0;
     bottom: 0;
+}
+header.site_header.header_fixed {
+    position: fixed;
+    top: 0;
+    bottom: auto;
 }
 /* header section css end */
 
@@ -41,6 +49,7 @@ header.site_header.top_page_header {
     line-height: 68px;
     margin-bottom: 30px;
     text-shadow: 15px 15px 20px rgb(0, 0, 0, 0.9);
+    font-weight: 600;
 }
 .banner_section p {
     font-size: 40px;
@@ -48,6 +57,7 @@ header.site_header.top_page_header {
     color: #fff;
     line-height: 45px;
     text-shadow: 15px 15px 20px rgb(0, 0, 0, 0.9);
+    font-weight: 600;
 }
 /*banner section css end*/
 
@@ -87,6 +97,7 @@ header.site_header.top_page_header {
     line-height: 40px;
     display: table;
     margin: auto;
+    font-weight: 600;
 }
 .line_heading p {
     text-align: center;
@@ -95,6 +106,7 @@ header.site_header.top_page_header {
     line-height: 32px;
     display: table;
     margin: auto;
+    font-weight: 400;
 }
 .news_section .news_content {
     padding: 48px 0;
@@ -154,6 +166,7 @@ header.site_header.top_page_header {
     font-size: 20px;
     transition: all 0.4s;
     border: 1px solid #d9b341;
+    font-weight: 600;
 }
 .news_section .news_content .news_content_inner .news_content_text a:hover {
     color: #d9b341;
@@ -218,7 +231,7 @@ header.site_header.top_page_header {
     padding-top: 65%;
     overflow: hidden;
 }
-.busniess_image_box img {
+.busniess_image_box .busniess_image_inner {
     position: absolute;
     top: 0;
     left: 0;
@@ -231,8 +244,23 @@ header.site_header.top_page_header {
     object-fit: cover;
     object-position: center right;
 }
-.busniess_management_box .busniess_image_box img {
+.busniess_image_box img.busniess_image_inner_second {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    min-width: 100%;
+        object-fit: contain;
+    object-position: right;
+}
+.busniess_management_box .busniess_image_box .busniess_image_inner {
     object-position: center left;
+}
+.busniess_management_box .busniess_image_box .busniess_image_inner_second{
+    left: 0;
+    right: auto;
+    object-position: left;
 }
 .busniess_box h3 {
     text-align: center;
@@ -241,12 +269,14 @@ header.site_header.top_page_header {
     font-weight: 500;
     margin-bottom: 10px;
     line-height: 48px;
+    font-weight: 600;
 }
 .busniess_box p {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     color: #000;
+    font-weight: 600;
 }
 .busniess_box a {
     width: 100%;
@@ -448,7 +478,44 @@ header.site_header.top_page_header {
         padding: 30px 0;
     }
 }
+@media(max-width: 1024px) {
+    .busniess_box .custom_col_text,
+    .busniess_box .custom_col_image {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .busniess_box .busniess_box_content:before {
+        top: 20px;
+        left: 20px;
+        right: -20px;
+        bottom: -20px;
+    }
+    .busniess_box.busniess_management_box .busniess_box_content:before {
+        top: 20px;
+        left: -20px;
+        right: 20px;
+        bottom: -20px;
+    }
+    .busniess_box .busniess_box_content {
+        margin-bottom: 16px;
+    }
+    .busniess_box.busniess_real_estate_box .busniess_box_content {
+        margin-bottom: 40px;
+    }
+    .busniess_image_box img.busniess_image_inner_second {
+        display: none;
+    }
+}
 @media(max-width: 900px) {
+    header.site_header.top_page_header {
+        position: fixed;
+        top: 0;
+        bottom: auto;
+    }
+    .banner_section {
+        padding-bottom: 0 !important;
+        padding-top: 84px;
+    }
     .banner_section h1 {
         font-size: 38px;
         line-height: 43px;
@@ -486,11 +553,6 @@ header.site_header.top_page_header {
     .busniess_box .busniess_box_content {
         padding: 15px;
     }
-    .busniess_box .custom_col_text,
-    .busniess_box .custom_col_image {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
     .busniess_box .busniess_box_content:before {
         top: 19px;
         left: 19px;
@@ -520,10 +582,11 @@ header.site_header.top_page_header {
         padding: 40px 0;
     }
     .banner_section {
-        padding-bottom: 60px;
+        padding-top: 60px;
+        background-position: -570px center;
     }
     .banner_section h1 {
-        font-size: 28px;
+        font-size: 26px;
         line-height: 32px;
         margin-bottom: 16px;
     }

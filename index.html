@@ -98,7 +98,8 @@
 						<div class="custom_row">
 							<div class="custom_col_image">
 								<div class="busniess_image_box">
-									<img src="images/busniess_image_1.png">
+									<img src="images/busniess_image_1.png" class="busniess_image_inner" alt="busniess image">
+									<img src="images/busniess_image_3.png" class="busniess_image_inner_second" alt="busniess image">
 								</div>
 							</div>
 							<div class="custom_col_text">
@@ -123,7 +124,8 @@
 						<div class="custom_row custom_row_reverse">
 							<div class="custom_col_image">
 								<div class="busniess_image_box">
-									<img src="images/busniess_image_2.png">
+									<img src="images/busniess_image_2.png" class="busniess_image_inner" alt="busniess image">
+									<img src="images/busniess_image_4.png" class="busniess_image_inner_second" alt="busniess image">
 								</div>
 							</div>
 							<div class="custom_col_text">
@@ -284,5 +286,28 @@
 	<script src="js/fonts-awesome-5.js"></script>
 	<script src="js/intersection-observer-polyfill.js"></script>
 	<script src="js/custom.js"></script>
+	<script type="text/javascript">
+		$(window).on('load resize scroll', function(){
+			var screen = jQuery(window).width();
+			var	windowHeight = $(window).height();
+			var	navHeight = $("header.site_header").innerHeight();
+			var	windowTop = $(window).scrollTop();
+
+			if(screen <= 900){
+				if(windowTop > 0) {
+					$("header.site_header").addClass("header_fixed");
+				} else {
+					$("header.site_header").removeClass("header_fixed");
+				}
+			}
+			else{
+				if(windowTop > (windowHeight - navHeight)) {
+					$("header.site_header").addClass("header_fixed");
+				} else {
+					$("header.site_header").removeClass("header_fixed");
+				}
+			}	
+		});
+	</script>
 </body>
 </html>
