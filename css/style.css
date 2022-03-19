@@ -1744,6 +1744,9 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     margin-bottom: 8px;
     box-shadow: 8px 8px 0 #070069;
 }
+.achievment-layer .layer-img img{
+    width: 100%;
+}
 .achievment-layer .layer-content{
     flex: 2 0 0;
     padding-left: 43px;
