@@ -1710,6 +1710,146 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 }
 /*faq section css end*/
 
+/* work achievment section css start */
+.achievment-section{
+    width: 100%;
+    padding-bottom: 140px;
+}
+.achievment-layer{
+    width: calc(100% - 20px);
+    background-color: #FFFFFF;
+    border: 3px solid #070069;
+    box-shadow: 20px 20px 0 #A0A0A0;
+    margin-bottom: 82px;
+}
+.achievment-layer .layer-head{
+    width: 100%;
+    background-color: #D9B341;
+    text-align: center;
+    padding: 3px 0;
+}
+.achievment-layer .layer-head h3{
+    color: #070069;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.achievment-layer .layer-flex{
+    display: flex;
+    align-items: flex-start;
+    padding: 14px 22px;
+}
+.achievment-layer .layer-img{
+    flex: 1 0 0;
+    margin-bottom: 8px;
+    box-shadow: 8px 8px 0 #070069;
+}
+.achievment-layer .layer-content{
+    flex: 2 0 0;
+    padding-left: 43px;
+}
+.achievment-layer .layer-content h4{
+    position: relative;
+    display: inline-block;
+    padding: 0 22px;
+    color: #070069;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    z-index: 1;
+}
+.achievment-layer .layer-content h4:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 56%;
+    background-color: #D9B341;
+    z-index: -1;
+}
+.achievment-layer .layer-content .para h4{
+    font-size: 16px;
+}
+.achievment-layer .layer-content ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 48px;
+}
+.achievment-layer .layer-content li{
+    position: relative;
+    display: block;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 50px;
+    color: #070069;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.8;
+}
+.achievment-layer .layer-content li span{
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+}
+.achievment-layer .layer-content li span:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #D9B341;
+}
+.achievment-layer .layer-content p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2;
+}
+.achievment-pagination{
+    width: 100%;
+    text-align: center;
+}
+.achievment-pagination ul{
+    display: inline-flex;
+    align-items: center;
+}
+.achievment-pagination ul li{
+    display: block;
+}
+.achievment-pagination ul li a{
+    position: relative;
+    display: block;
+    padding: 0 6px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    z-index: 1;
+}
+.achievment-pagination ul li a.next-bttn{
+    color: #070069;
+    font-size: 30px;
+    padding: 0 10px;
+    margin-left: 8px;
+}
+.achievment-pagination ul li a.next-bttn:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #D9B341;
+    z-index: -1;
+}
+/* work achievment section css end */
+
 /*responsive css start*/
 @media(max-width: 1166px) {
     .main{
