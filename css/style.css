@@ -649,7 +649,7 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
-} 
+}
 .news_section .news_content .news_table {
     display: table;
     width: auto;
@@ -657,7 +657,7 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 .news_section .news_content .news_table_row {
     display: table-row;
 }
-.news_section .news_content .news_table_th, 
+.news_section .news_content .news_table_th,
 .news_section .news_content .news_table_td {
     display: table-cell;
 }
@@ -993,6 +993,15 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     font-size: 30px;
     font-weight: 600;
     line-height: 1.5;
+}
+.underline_heading p{
+    color: #221815;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 600;
+    width: 100%;
+    max-width: 860px;
+    margin: 30px auto 0;
 }
 /* regular head 2 css end */
 
@@ -1372,6 +1381,15 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     padding: 0 20px;
     margin-bottom: 40px;
 }
+.company-page-layer .organization-detail{
+    width: 100%;
+    text-align: right;
+}
+.company-page-layer .organization-detail img{
+    max-width: 140px;
+    display: inline;
+    margin-bottom: -10px;
+}
 .company-page-layer .table-wrapper{
     width: 100%;
     overflow-x: auto;
@@ -1525,6 +1543,15 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     color: #060d62;
     font-size: 16px;
     font-weight: 600;
+}
+.sales-remodeling-section{
+    width: 100%;
+    background-color: #e5e5e5;
+    padding: 30px 0 50px;
+    margin-bottom: 80px;
+}
+.sales-remodeling-section .big-img img{
+    width: 100%;
 }
 /* sales page css end */
 
@@ -2008,6 +2035,9 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     }
     .underline_heading h2{
         font-size: 20px;
+    }
+    .underline_heading p{
+        font-size: 16px;
     }
     .howto-contact-section{
         padding-bottom: 40px;
