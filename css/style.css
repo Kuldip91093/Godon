@@ -1555,62 +1555,6 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 }
 /* sales page css end */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*faq section css start*/
 .faq_section {
     padding-bottom: 120px;
@@ -1862,10 +1806,10 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     margin: auto;
 }
 .holder_col {
-    color: #cfcfcf !important;
+    color: #333333 !important;
 }
 .active_col {
-    color: #333333 !important;
+    color: #000000 !important;
 }
 .single_input {
     margin-bottom: 40px;
