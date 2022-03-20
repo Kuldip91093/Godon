@@ -65,10 +65,10 @@ img{
     max-width: 100%;
     display: block;
 }
-.cpc, .cpc-675, .cpc-1166 {
+.cpc, .cpc-675, .cpc-1166, .cpc-1024 {
     display: block !important;
 }
-.csp, .csp-675, .csp-1166 {
+.csp, .csp-675, .csp-1166, .csp-1024 {
     display: none !important;
 }
 @media (max-width: 1166px){
@@ -76,6 +76,14 @@ img{
         display: none !important;
     }
     .csp-1166{
+        display: block !important;
+    }
+}
+@media (max-width: 1024px){
+    .cpc-1024{
+        display: none !important;
+    }
+    .csp-1024{
         display: block !important;
     }
 }
@@ -1686,6 +1694,9 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 .achievment-layer .layer-img{
     flex: 1 0 0;
 }
+.achievment-layer > .para {
+    padding: 0 15px 15px;
+}
 .achievment-layer .layer-img img{
     width: 100%;
     margin-bottom: 8px;
@@ -1695,6 +1706,7 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     flex: 2 0 0;
     padding-left: 43px;
 }
+.achievment-layer > .para h4,
 .achievment-layer .layer-content h4{
     position: relative;
     display: inline-block;
@@ -1705,7 +1717,8 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     line-height: 1.5;
     z-index: 1;
 }
-.achievment-layer .layer-content h4:before{
+.achievment-layer > .para h4:before,
+.achievment-layer .layer-content h4:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1716,7 +1729,7 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     background-color: #D9B341;
     z-index: -1;
 }
-.achievment-layer .layer-content .para h4{
+.achievment-layer .para h4{
     font-size: 16px;
 }
 .achievment-layer .layer-content ul{
@@ -1776,12 +1789,20 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     font-weight: 600;
     line-height: 1.3;
     z-index: 1;
+    transition: all 0.4s;
+}
+.achievment-pagination ul li a:hover {
+    color: #d9b341;
 }
 .achievment-pagination ul li a.next-bttn{
     color: #070069;
     font-size: 30px;
     padding: 0 10px;
     margin-left: 8px;
+    transition: all 0.4s;
+}
+.achievment-pagination ul li a.next-bttn:hover {
+    color: #D9B341;
 }
 .achievment-pagination ul li a.next-bttn:before{
     content: '';
@@ -1792,7 +1813,11 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     width: 100%;
     height: 50%;
     background-color: #D9B341;
+    transition: all 0.4s;
     z-index: -1;
+}
+.achievment-pagination ul li a.next-bttn:hover:before {
+    background-color: #393387;
 }
 /* work achievment section css end */
 
@@ -2153,6 +2178,19 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     .answer_content p {
         padding: 0px 0px 0px 30px !important;
     }
+    .achievment-layer .layer-content li {
+        display: table;
+        margin-bottom: 30px;
+    }
+    .achievment-layer .layer-img {
+        flex: 0 0 280px;
+        max-width: 280px;
+    }
+    .achievment-layer .layer-content {
+        flex: 0 0 calc(100% - 280px);
+        max-width: calc(100% - 280px);
+        padding-left: 35px;
+    }
 }
 @media(max-width: 900px) {
     header.site_header.top_page_header {
@@ -2510,6 +2548,19 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
         padding: 0 5px;
     }
 }
+@media(max-width: 767px) {
+    .achievment-layer .layer-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+        padding-right: 5px;
+    }
+    .achievment-layer .layer-content {
+        padding-left: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
 @media(max-width: 675px) {
     .main{
         padding-top: 60px;
@@ -2749,19 +2800,9 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
         flex-wrap: wrap;
         padding: 10px;
     }
-    .achievment-layer .layer-img {
-        flex: 0 0 100%;
-        max-width: calc(100% - 5px);
-        margin-bottom: 30px;
-    }
     .achievment-layer .layer-img img {
         margin-bottom: 5px;
         box-shadow: 5px 5px 0 #070069;
-    }
-    .achievment-layer .layer-content {
-        padding-left: 0;
-        flex: 0 0 100%;
-        max-width: 100%;
     }
     .achievment-layer .layer-content h4{
         padding: 0 5px;
