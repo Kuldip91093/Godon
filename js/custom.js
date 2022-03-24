@@ -30,6 +30,9 @@ $(window).on('load',function() {
 		// $("#id_selectbox").on("change", function() {
 		// 	$(this).removeClass("holder_col").addClass("active_col");
 		// });
+		setTimeout(function (){
+			$(".banner_section").removeClass("before_load");
+		}, 1000);
 	});
 });
 
