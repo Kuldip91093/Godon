@@ -2624,6 +2624,8 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     }
     .banner_section {
         padding-top: 60px;
+    }
+    .banner_section:after{
         background-position: -570px center;
     }
     .banner_section h1 {
