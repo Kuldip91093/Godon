@@ -556,7 +556,6 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     align-items: center;
     justify-content: flex-end;
     padding-bottom: 100px;
-    transition: all 0.75s linear;
     position: relative;
 }
 .banner_section.before_load img {
@@ -574,7 +573,7 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     object-fit: cover;
     z-index: -1;
     opacity: 1;
-    transition: all 0.75s linear;
+    transition: all 0.75s;
 }
 .banner_section:before {
     content: "";
