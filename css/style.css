@@ -598,7 +598,7 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 .banner_section .banner_content {
     opacity: 1;
     left: 0px;
-    transition: all 0.75s linear;
+    transition: all 0.75s;
     position: relative;
     z-index: 1;
 }
