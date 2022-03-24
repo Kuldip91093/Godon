@@ -2276,8 +2276,9 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
         text-align: center;
         padding: 10px 0;
     }
+    .site_header.inner_page_header .custom_navbar ul li a,
     .site_header .custom_navbar ul li a {
-        font-size: 26px;
+        font-size: 18px;
     }
     /*header css end*/
     /*footer css start*/
