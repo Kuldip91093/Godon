@@ -89,4 +89,31 @@ $(document).ready(function(){
 		});
 	});
 
+	// banner animation JS
+	$(window).on('load resize', function(){
+		var	bannerHeight = $(".banner_animation").height();
+		$(".banner_after_section").css("margin-top", bannerHeight)
+	});
+
+	// navigation animation JS
+	$(window).on('load resize scroll', function(){
+		var screen = jQuery(window).width();
+		var windowHeight = $(window).height();
+		var navHeight = $(".site_header.inner_page_header").innerHeight();
+		var windowTop = $(window).scrollTop();
+		if(screen <= 900){
+			if(windowTop > 0) {
+				$(".site_header.inner_page_header").addClass("header_fixed_inner");
+			} else {
+				$(".site_header.inner_page_header").removeClass("header_fixed_inner");
+			}
+		}
+		else{
+			if(windowTop > (windowHeight - navHeight)) {
+				$(".site_header.inner_page_header").addClass("header_fixed_inner");
+			} else {
+				$(".site_header.inner_page_header").removeClass("header_fixed_inner");
+			}
+		}   
+	});
 });

@@ -22,15 +22,17 @@
 				</a>
 				<nav class="custom_navbar">
 					<ul>
-						<li><a href="#">事業案内</a></li>
-						<li><a href="#">売買実績</a></li>
 						<li><a href="#">会社案内</a></li>
-						<li><a href="#">お問い合わせ</a></li>
+                        <li><a href="#">ご購入・ご売却について</a></li>
+                        <li><a href="#">賃貸管理</a></li>
+                        <li><a href="#">実績一覧</a></li>
+                        <li><a href="#">採用情報</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-		<section class="banner_section before_load">
+		<section class="banner_section before_load banner_animation">
 			<div class="custom_container">
 				<div class="banner_content">
 					<h1>RELIABLE ESTATE AGENT</h1>
@@ -38,14 +40,14 @@
 				</div>
 			</div>
 		</section>
-		<section class="news_section">
-			<div class="line_heading">
+		<section class="news_section banner_after_section">
+			<div class="line_heading io fade upS">
 				<h3>News</h3>
 				<p>新着情報</p>
 			</div>
 			<div class="news_content">
 				<div class="news_content_inner">
-					<div class="news_content_text">
+					<div class="news_content_text io fade upS">
 						<div class="news_table">
 							<div class="news_table_row">
 								<div class="news_table_th">
@@ -86,15 +88,15 @@
 			</div>
 		</section>
 		<section class="busniess_section">
-			<div class="line_heading">
+			<div class="line_heading io fade upS">
 				<h3>Business</h3>
 				<p>事業案内</p>
 			</div>
 			<div class="busniess_box busniess_real_estate_box">
-				<div class="custom_container">
+				<div class="custom_container right_align">
 					<div class="busniess_box_content">
 						<div class="custom_row">
-							<div class="custom_col_image">
+							<div class="custom_col_image io fade lr">
 								<div class="busniess_image_box">
 									<img src="images/busniess_image_1.png" class="busniess_image_inner" alt="busniess image">
 									<img src="images/busniess_image_3.png" class="busniess_image_inner_second" alt="busniess image">
@@ -116,11 +118,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="busniess_box busniess_management_box">
-				<div class="custom_container">
+			<div class="busniess_box busniess_management_box io fade upS">
+				<div class="custom_container left_align">
 					<div class="busniess_box_content">
 						<div class="custom_row custom_row_reverse">
-							<div class="custom_col_image">
+							<div class="custom_col_image io fade rl">
 								<div class="busniess_image_box">
 									<img src="images/busniess_image_2.png" class="busniess_image_inner" alt="busniess image">
 									<img src="images/busniess_image_4.png" class="busniess_image_inner_second" alt="busniess image">
@@ -144,7 +146,7 @@
 			</div>
 		</section>
 		<section class="trading_section">
-			<div class="line_heading">
+			<div class="line_heading io fade upS">
 				<h3>Trading Results</h3>
 				<p>最新売買の実績</p>
 			</div>
@@ -152,7 +154,7 @@
 				<div class="custom_container">
 					<div class="custom_row">
 						<div class="custom_col_4">
-							<div class="trading_box">
+							<div class="trading_box io fade upS">
 								<div class="trading_image">
 									<img src="images/tranding_image_1.png" align="tranding image">
 								</div>
@@ -163,7 +165,7 @@
 							</div>
 						</div>
 						<div class="custom_col_4">
-							<div class="trading_box">
+							<div class="trading_box io fade upS">
 								<div class="trading_image">
 									<img src="images/tranding_image_2.png" align="tranding image">
 								</div>
@@ -173,7 +175,7 @@
 							</div>
 						</div>
 						<div class="custom_col_4">
-							<div class="trading_box">
+							<div class="trading_box io fade upS">
 								<div class="trading_image">
 									<img src="images/tranding_image_3.png" align="tranding image">
 								</div>
@@ -183,7 +185,7 @@
 							</div>
 						</div>
 						<div class="custom_col_4">
-							<div class="trading_box">
+							<div class="trading_box io fade upS">
 								<div class="trading_image">
 									<img src="images/tranding_image_4.png" align="tranding image">
 								</div>
@@ -193,20 +195,20 @@
 							</div>
 						</div>
 					</div>
-					<a href="#"><span>▶</span> その他の実績はこちら</a>
+					<a class="io fade upS" href="#"><span>▶</span> その他の実績はこちら</a>
 				</div>
 			</div>
 		</section>
 		<section class="contact_section">
 			<div class="custom_container">
-				<div class="line_heading">
+				<div class="line_heading io fade upS">
 					<h3>Contact</h3>
 					<p>お問い合わせ</p>
 				</div>
 				<div class="howto-contact-content">
 					<div class="custom_row">
 						<div class="custom_col_6 columnn">
-							<div class="content-bx">
+							<div class="content-bx io fade upS">
 								<div class="head">
 									<div class="icon">
 										<img src="images/icon-call-blue.png">
@@ -221,7 +223,7 @@
 							</div>
 						</div>
 						<div class="custom_col_6 columnn">
-							<div class="content-bx">
+							<div class="content-bx io fade upS">
 								<div class="head">
 									<div class="icon">
 										<img src="images/icon-mail-blue.png">
@@ -291,20 +293,11 @@
 			var	windowHeight = $(window).height();
 			var	navHeight = $("header.site_header").innerHeight();
 			var	windowTop = $(window).scrollTop();
-			if(screen <= 900){
-				if(windowTop > 0) {
-					$("header.site_header").addClass("header_fixed");
-				} else {
-					$("header.site_header").removeClass("header_fixed");
-				}
+			if(windowTop > 0) {
+				$("header.site_header").addClass("header_fixed");
+			} else {
+				$("header.site_header").removeClass("header_fixed");
 			}
-			else{
-				if(windowTop > (windowHeight - navHeight)) {
-					$("header.site_header").addClass("header_fixed");
-				} else {
-					$("header.site_header").removeClass("header_fixed");
-				}
-			}	
 		});
 	</script>
 </body>
