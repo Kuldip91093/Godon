@@ -355,12 +355,10 @@ section {
 /*animations css end*/
 
 /*main css start*/
-/*.main{
-    width: 100%;
-    overflow-x: hidden;
-    padding-top: 100px;
+.main{
+    padding-top: 100vh;
 }
-main.main.top_page_header {
+/*main.main.top_page_header {
     padding-top: 0;
 }*/
 /*main css end*/

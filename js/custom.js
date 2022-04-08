@@ -90,10 +90,10 @@ $(document).ready(function(){
 	});
 
 	// banner animation JS
-	$(window).on('load resize', function(){
-		var	bannerHeight = $(".banner_animation").height();
-		$(".banner_after_section").css("margin-top", bannerHeight)
-	});
+	// $(window).on('load', function(){
+	// 	var	bannerHeight = $(".banner_animation").height();
+	// 	$(".banner_after_section").css("margin-top", bannerHeight)
+	// });
 
 	// navigation animation JS
 	$(window).on('load resize scroll', function(){
