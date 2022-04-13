@@ -96,24 +96,28 @@ $(document).ready(function(){
 	// });
 
 	// navigation animation JS
+	// $(window).on('load resize scroll', function(){
+	// 	var screen = jQuery(window).width();
+	// 	var windowHeight = $(window).height();
+	// 	var navHeight = $(".site_header.inner_page_header").innerHeight();
+	// 	var windowTop = $(window).scrollTop();
+
+	// 	if(windowTop > 0) {
+	// 		$(".site_header.inner_page_header").addClass("header_fixed_inner");
+	// 	} else {
+	// 		$(".site_header.inner_page_header").removeClass("header_fixed_inner");
+	// 	}
+
+	// });
 	$(window).on('load resize scroll', function(){
 		var screen = jQuery(window).width();
-		var windowHeight = $(window).height();
-		var navHeight = $(".site_header.inner_page_header").innerHeight();
-		var windowTop = $(window).scrollTop();
-		if(screen <= 900){
-			if(windowTop > 0) {
-				$(".site_header.inner_page_header").addClass("header_fixed_inner");
-			} else {
-				$(".site_header.inner_page_header").removeClass("header_fixed_inner");
-			}
+		var	windowHeight = $(window).height();
+		var	navHeight = $("header.site_header").innerHeight();
+		var	windowTop = $(window).scrollTop();
+		if(windowTop > 250) {
+			$("header.site_header").addClass("header_fixed");
+		} else {
+			$("header.site_header").removeClass("header_fixed");
 		}
-		else{
-			if(windowTop > (windowHeight - navHeight)) {
-				$(".site_header.inner_page_header").addClass("header_fixed_inner");
-			} else {
-				$(".site_header.inner_page_header").removeClass("header_fixed_inner");
-			}
-		}   
 	});
 });
