@@ -1,9 +1,9 @@
 // on page scroll animations js
-$(window).on('load',function() {
+$(window).on('load', function () {
 	$('.loader-wrapper').fadeOut('slow');
-	$(function() {
-		var observer = new IntersectionObserver(function(entries) {
-			entries.forEach(function(e) {
+	$(function () {
+		var observer = new IntersectionObserver(function (entries) {
+			entries.forEach(function (e) {
 				if (!e.isIntersecting) return;
 				e.target.classList.add('move'); // 交差した時の処理
 				observer.unobserve(e.target);
@@ -16,13 +16,13 @@ $(window).on('load',function() {
 				//   e.rootBounds			ルートのgetBoundingClientRect()
 				//   e.time					変更が起こったタイムスタンプ
 			})
-		},{
+		}, {
 			// オプション設定
 			rootMargin: '0px 0px -5% 0px' //下端から5%入ったところで発火
 			//threshold: [0, 0.5, 1.0]
 		});
 		var target = document.querySelectorAll('.io'); //監視したい要素をNodeListで取得
-		for(var i = 0; i < target.length; i++ ) {
+		for (var i = 0; i < target.length; i++) {
 			observer.observe(target[i]); // 要素の監視を開始
 		}
 		//アニメーションによる各要素のはみ出しを解消
@@ -30,19 +30,19 @@ $(window).on('load',function() {
 		// $("#id_selectbox").on("change", function() {
 		// 	$(this).removeClass("holder_col").addClass("active_col");
 		// });
-		setTimeout(function (){
+		setTimeout(function () {
 			$(".banner_section").removeClass("before_load");
 		}, 1000);
 	});
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-	$('.navbar_toggler').click(function(){
-        $('body').toggleClass('no_scroll');
-        $(this).toggleClass('open_menu');
-        $(this).next("nav").toggleClass('navbar_animate');
-    });
+	$('.navbar_toggler').click(function () {
+		$('body').toggleClass('no_scroll');
+		$(this).toggleClass('open_menu');
+		$(this).next("nav").toggleClass('navbar_animate');
+	});
 
 	// got to page top js
 	// $(window).on('load scroll',function(){
@@ -62,7 +62,7 @@ $(document).ready(function(){
 });
 
 // Responsive Tabs
-$(document).ready(function(){
+$(document).ready(function () {
 
 	$('#re_purchase').responsiveTabs({
 		startCollapsed: 'accordion',
@@ -76,13 +76,13 @@ $(document).ready(function(){
 		animation: 'slide'
 	});
 
-	setTimeout(function(){
+	setTimeout(function () {
 		var triggerEl = $('.active_tab_on_load').prev('.r-tabs-accordion-title').find('.r-tabs-anchor')
 		triggerEl.trigger('click');
 		// console.log(triggerEl)
-	},100);
+	}, 100);
 
-	$(function() {
+	$(function () {
 		$(".faq_content").accordion({
 			heightStyle: "content",
 			collapsible: true
@@ -109,15 +109,41 @@ $(document).ready(function(){
 	// 	}
 
 	// });
-	$(window).on('load resize scroll', function(){
+	$(window).on('load resize scroll', function () {
 		var screen = jQuery(window).width();
-		var	windowHeight = $(window).height();
-		var	navHeight = $("header.site_header").innerHeight();
-		var	windowTop = $(window).scrollTop();
-		if(windowTop > 250) {
+		var windowHeight = $(window).height();
+		var navHeight = $("header.site_header").innerHeight();
+		var windowTop = $(window).scrollTop();
+		if (windowTop > 250) {
 			$("header.site_header").addClass("header_fixed");
 		} else {
 			$("header.site_header").removeClass("header_fixed");
 		}
+	});
+
+	$('.trading_content_slider').slick({
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1167,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 901,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 676,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 });

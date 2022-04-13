@@ -998,6 +998,118 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 }
 /*business section css end*/
 
+/*business section(theme2) css start*/
+.business_container{
+    width: 100%;
+    max-width: 1550px;
+    padding: 0 15px;
+    margin: auto;
+}
+.busniess_box_theme2{
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding: 0 50px 50px 0;
+}
+.busniess_box_theme2.busniess_management_box2 {
+    padding-top: 150px;
+}
+.busniess_box_theme2 .busniess_box_content_theme2{
+    border: 5px solid #d9b341;
+    padding: 45px;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+.busniess_box_theme2 .busniess_box_content_theme2:before {
+    content: '';
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    width: 100%;
+    height: 100%;
+    background-color: #060d62;
+    z-index: -1;
+}
+.busniess_image_box_theme2 {
+    position: relative;
+    padding-top: 65%;
+    overflow: hidden;
+}
+.busniess_image_box_theme2 .busniess_image_inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center right;
+}
+.busniess_image_box_theme2 img.busniess_image_inner_second {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: contain;
+    object-position: right;
+}
+.busniess_management_box2 .busniess_image_box_theme2 .busniess_image_inner_second {
+    left: 0;
+    right: auto;
+    object-position: left;
+}
+.busniess_box_theme2 .custom_col_text_theme2 .busniess_image_text_theme2 {
+    padding-top: 20px;
+    text-align: center;
+}
+.busniess_box_theme2 h3 {
+    text-align: center;
+    color: #060d62;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.busniess_box_theme2 p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000;
+    font-weight: 600;
+    display: inline-block;
+    text-align: left;
+}
+.busniess_box_theme2 a {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px auto 0;
+    display: block;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #070069;
+    font-size: 18px;
+    color: #000;
+    transition: all 0.4s;
+}
+.busniess_box_theme2 a span {
+    color: #d9b341;
+    margin-right: 12px;
+}
+.busniess_box_theme2 a:hover {
+    background-color: #070069;
+    color: #fff;
+}
+/*business section(theme2) css end*/
+
 /*trading section css start*/
 .trading_section {
     padding: 100px 0;
@@ -1062,6 +1174,36 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 }
 .trading_section.pattern1 .trading_content .trading_box .trading_text {
     background-color: #070069;
+    min-height: 60px;
+    max-height: 60px;
+    overflow: hidden;
+}
+.trading_content_slider{
+    position: relative;
+    margin-bottom: 50px;
+}
+.trading_content_slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 9;
+    width: 40px;
+    height: 100px;
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+    background-size: 100% 100%;
+}
+.trading_content_slider .slick-arrow.slick-prev{
+    left: -70px;
+    background-image: url('../images/yellow-arrow-left.png');
+}
+.trading_content_slider .slick-arrow.slick-next{
+    right: -70px;
+    background-image: url('../images/yellow-arrow-right.png');
+}
+.trading_content_slider_item {
+    padding: 0 25px;
 }
 .trading_content .trading_box .trading_text p {
     font-size: 16px;
@@ -2251,6 +2393,12 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     .busniess_section .custom_container.right_align {
         margin-right: auto;
     }
+    .trading_content_slider .slick-arrow.slick-prev{
+        left: -20px;
+    }
+    .trading_content_slider .slick-arrow.slick-next{
+        right: -20px;
+    }
 }
 @media(max-width: 1166px) {
     /*.main {
@@ -2348,6 +2496,16 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     .trading_content {
         padding: 30px 0;
     }
+    .trading_content_slider .slick-arrow{
+        width: 25px;
+        height: 60px;
+    }
+    .trading_content_slider .slick-arrow.slick-prev{
+        left: -10px;
+    }
+    .trading_content_slider .slick-arrow.slick-next{
+        right: -10px;
+    }
     .regular-head h2{
         font-size: 32px;
     }
@@ -2399,13 +2557,17 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
         max-width: 280px;
     }
     .site_header a.header_logo img {
-        max-width: 220px;
+        max-width: 200px;
     }
     .site_header .custom_navbar ul li:not(:first-child) {
         margin-left: 20px;
     }
     .site_header.inner_page_header .custom_navbar ul li:not(:first-child) {
         margin-left: 20px;
+    }
+    .site_header .custom_navbar ul li a,
+    .site_header.inner_page_header .custom_navbar ul li a{
+        font-size: 16px;
     }
     .site_footer p, .site_footer a {
         font-size: 18px;
@@ -2445,6 +2607,9 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     }
     .busniess_image_box img.busniess_image_inner_second {
         display: none;
+    }
+    .busniess_box_theme2 .busniess_box_content_theme2{
+        padding: 30px;
     }
     .faq_content h4 {
         font-size: 20px !important;
@@ -2608,6 +2773,13 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     }
     .busniess_box.busniess_real_estate_box {
         margin-bottom: 20px;
+    }
+    .business_container .custom_col_6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .busniess_box_theme2.busniess_management_box2{
+        padding-top: 0;
     }
     .regular-head.margin-top-minus{
         padding-bottom: 50px;
@@ -2925,6 +3097,33 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     }
     .trading_content a {
         max-width: 250px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .busniess_box_theme2{
+        padding: 0 20px 20px 0;
+    }
+    .busniess_box_theme2 .busniess_box_content_theme2:before{
+        right: -20px;
+        bottom: -20px;
+    }
+    .busniess_box_theme2 .busniess_box_content_theme2{
+        padding: 15px;
+        border-width: 3px;
+    }
+    .busniess_box_theme2 h3 {
+        font-size: 24px;
+        margin-bottom: 5px;
+        line-height: 38px;
+    }
+    .busniess_box_theme2 p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .busniess_box_theme2 a {
+        max-width: 220px;
+        margin: 10px auto 0;
         height: 50px;
         line-height: 50px;
         font-size: 16px;
