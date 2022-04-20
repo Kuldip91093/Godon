@@ -613,6 +613,7 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     justify-content: flex-end;
     position: relative;
     z-index: 1;
+    background-color: #070069;
 }
 .banner_section.before_load:after {
     background-position: center right 150px;
@@ -703,7 +704,6 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 }
 .banner_slider_overlay img{
     height: 100%;
-    object-fit: cover;
 }
 .banner_section .banner_content_wrapper {
     position: absolute;
@@ -3175,6 +3175,12 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     }
     .banner_section:after{
         background-position: -570px center;
+    }
+    .banner_slider_overlay{
+        width: 60%;
+    }
+    .banner_slider_overlay img{
+        width: 100%;
     }
     .banner_section h1 {
         font-size: 26px;
