@@ -156,4 +156,12 @@ $(document).ready(function () {
 		autoplay: true,
 		autoplaySpeed: 3000
 	});
+
+	$('.banner_slider').slick({
+		infinite: true,
+		dots: false,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 5000
+	});
 });
