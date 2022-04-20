@@ -663,7 +663,7 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     height: 100%;
     transform: none;
     opacity: 1;
-    transition: all 0.75s linear;
+    transition: all 0.55s linear;
 }
 .banner_slider:before{
     content: '';
@@ -700,7 +700,7 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     transition: all 0.5s linear;
     transform: none;
     opacity: 1;
-    transition-delay: 0.75s;
+    /*transition-delay: 0.75s;*/
 }
 .banner_slider_overlay img{
     height: 100%;
@@ -718,7 +718,7 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     margin: auto;
 }
 .banner_section.before_load .banner_content {
-    left: 150px;
+    left: 0;
     opacity: 0;
 }
 .banner_section .banner_content {
@@ -727,7 +727,10 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     transition: all 0.75s linear;
     position: relative;
     z-index: 1;
-    transition-delay: .6s;
+    transition-delay: .4s;
+}
+.banner_section .banner_content.move {
+    transition-delay: 1.6s !important;
 }
 .banner_section h1 {
     font-size: 60px;

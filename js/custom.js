@@ -162,6 +162,7 @@ $(document).ready(function () {
 		dots: false,
 		arrows: false,
 		autoplay: true,
-		autoplaySpeed: 5000
+		autoplaySpeed: 5000,
+		rtl: true
 	});
 });
