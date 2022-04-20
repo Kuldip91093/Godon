@@ -215,6 +215,14 @@ section {
     backface-visibility: hidden;
     will-change: opacity, transform;
 }
+.io.iolong {
+    -webkit-transition: color 1.4s ease 0s, background-color 1.4s ease 0s, opacity 2.0s ease 0s, -webkit-transform 2.5s ease 0s;
+    transition: color 1.4s ease 0s, background-color 1.4s ease 0s, opacity 2.0s ease 0s, transform 2.5s ease 0s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: opacity, transform;
+}
+
 .io.move {
     opacity: 1 !important;
     -webkit-transform: translate3d(0, 0, 0) scale(1) rotate(0deg) !important;
@@ -402,7 +410,7 @@ section {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    max-width: calc(100% - 170px);
     padding: 0 15px;
     margin: auto;
 }
@@ -1245,6 +1253,7 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 }
 .recruit_container {
     width: 570px;
+    margin-left: 180px;
     margin-right: auto;
     height: 600px;
 }
@@ -1265,7 +1274,6 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     color: #fff;
     font-size: 20px;
     transition: all 0.4s;
-    border: 1px solid #d9b341;
     font-weight: 600;
     border: solid 2px #fff;
     -webkit-box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.3);
@@ -1275,6 +1283,11 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 .recruit_btn a span {
     color: #060d62;
     margin-right: 10px;
+}
+.recruit_btn a:hover {
+    background-color: #fff;
+    border: 2px solid #d9b341;
+    color: #d9b341;
 }
 /*trading section css end*/
 
@@ -1705,7 +1718,7 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     background: #FFF;
     text-align: center;
     padding: 12px;
-    margin: 38px auto 0;
+    margin: auto;
     transition: all 0.4s;
 }
 .howto-contact-content .content-mail:hover,
@@ -2387,16 +2400,19 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
 
 /*responsive css start*/
 @media(max-width: 1400px) {
-    .busniess_section .custom_container.left_align {
+    .site_header .custom_container {
+        max-width: 1200px;
+    }
+    .busniess_section .custom_container.left_align { /*@media(max-width: 1400px)*/
         margin-left: auto;
     }
-    .busniess_section .custom_container.right_align {
+    .busniess_section .custom_container.right_align { /*@media(max-width: 1400px)*/
         margin-right: auto;
     }
-    .trading_content_slider .slick-arrow.slick-prev{
+    .trading_content_slider .slick-arrow.slick-prev{ /*@media(max-width: 1400px)*/
         left: -20px;
     }
-    .trading_content_slider .slick-arrow.slick-next{
+    .trading_content_slider .slick-arrow.slick-next{ /*@media(max-width: 1400px)*/
         right: -20px;
     }
 }
@@ -3319,6 +3335,7 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
         padding-top: 40px;
     }
     .recruit_container {
+        margin-left: 0;
         width: 100%;
         height: 300px;
     }

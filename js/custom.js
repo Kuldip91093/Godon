@@ -114,7 +114,7 @@ $(document).ready(function () {
 		var windowHeight = $(window).height();
 		var navHeight = $("header.site_header").innerHeight();
 		var windowTop = $(window).scrollTop();
-		if (windowTop > 250) {
+		if (windowTop > (windowHeight - 250)) {
 			$("header.site_header").addClass("header_fixed");
 		} else {
 			$("header.site_header").removeClass("header_fixed");
