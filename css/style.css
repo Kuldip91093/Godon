@@ -1256,13 +1256,19 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 80px;
+    /*padding-top: 80px;*/
+    position: relative;
+    z-index: 1;
 }
 .recruit_container {
     width: 570px;
     margin-left: 180px;
     margin-right: auto;
-    height: 600px;
+    /*height: 600px;*/
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 2;
 }
 .recruit_btn {
     display: flex;
@@ -1295,6 +1301,29 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     background-color: #fff;
     border: 2px solid #d9b341;
     color: #d9b341;
+}
+.recruit_slider_image {
+    position: relative;
+    padding-top: 680px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.recruit_slider_image img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+.recruit_slider {
+    position: relative;
+    z-index: 0;
 }
 /*trading section css end*/
 
@@ -2766,9 +2795,11 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
     .news_section .news_content .news_content_inner {
         padding: 15px;
     }
+    .recruit_slider_image {
+        padding-top: 400px;
+    }
     .recruit_container {
         width: 350px;
-        height: 400px;
     }
     .recruit_btn a {
         max-width: 180px;
@@ -3338,13 +3369,15 @@ header.site_header.home_page_nav.fixed_header .navbar_toggler .navbar_toggler_in
         width: 100%;
         padding-left: 20px;
     }
-    .recruit_section {
-        padding-top: 40px;
+    .recruit_container {
+        top: 40px;
     }
     .recruit_container {
         margin-left: 0;
         width: 100%;
-        height: 300px;
+    }
+    .recruit_slider_image {
+        padding-top: 300px;
     }
     .contact_section.pattern1 {
         padding-top: 40px;

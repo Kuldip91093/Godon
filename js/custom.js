@@ -148,4 +148,12 @@ $(document).ready(function () {
 			}
 		]
 	});
+
+	$('.recruit_slider').slick({
+		infinite: true,
+		dots: false,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 3000
+	});
 });
