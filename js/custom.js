@@ -67,13 +67,15 @@ $(document).ready(function () {
 	$('#re_purchase').responsiveTabs({
 		startCollapsed: 'accordion',
 		active: 1,
-		animation: 'slide'
+		// animation: 'fade',
+		// duration: 100,
 	});
 
 	$('#re_sale').responsiveTabs({
 		startCollapsed: 'accordion',
 		active: 1,
-		animation: 'slide'
+		// animation: 'fade',
+		// duration: 100,
 	});
 
 	setTimeout(function () {
@@ -154,7 +156,9 @@ $(document).ready(function () {
 		dots: false,
 		arrows: false,
 		autoplay: true,
-		autoplaySpeed: 3000
+		speed: 1000,
+		cssEase: 'ease-in-out',
+		autoplaySpeed: 3000,
 	});
 
 	$('.banner_slider').slick({
@@ -162,7 +166,9 @@ $(document).ready(function () {
 		dots: false,
 		arrows: false,
 		autoplay: true,
+		speed: 1500,
 		autoplaySpeed: 5000,
+		cssEase: 'ease-in-out',
 		rtl: true
 	});
 });
